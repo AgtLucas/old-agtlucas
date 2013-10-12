@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blog
+---
+
+{% for post in site.posts %}
+  <article class="post" role="article">
+
+    <header class="post-info">
+      <small>{{ post.date | date_to_string }}</small>
+    </header>
+
+    <h2 class="post-title">
+      <a href="{{ post.url }}" data-pjax=".main-content">{{ post.title }}</a>
+    </h2>
+
+    <section class="post-content">
+      {{ post.excerpt }}
+    </section>
+
+    <p class="read-more">
+      {% if post.excerpt %}
+      <a href="{{ post.url }}" class="read-more-link" data-pjax=".main-content">Leia +</a>
+      {% endif %}
+    </p>
+
+  </article>
+{% endfor %}

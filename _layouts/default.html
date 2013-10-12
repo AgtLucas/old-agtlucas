@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--[if lt IE 10]><meta http-equiv="refresh" content="0; url=/sorry/"><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Prefecth DNS -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//platform.twitter.com">
+  <link rel="dns-prefetch" href="//p.twitter.com">
+  <link rel="dns-prefetch" href="//cdn.api.twitter.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//themes.googleusercontent.com">
+
+  <title>{{ page.title }} &ndash; AgtLucas</title>
+
+  <meta name="description" content="Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="http://agtlucas.com{{ page.url | canonical }}">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:url" content="http://agtlucas.com{{ page.url }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="https://plus.google.com/112631892276196724070/posts">
+  <meta name="description" content="HTML5, CSS3, JavaScript, PHP, Rails and other stuffs">
+</head>
+<body class="blog">
+
+  <div class="blog-content">
+    {% include header.html %}
+
+    <section class="main-content" role="main" data-content="main">
+      <div class="wrap-content">
+        {{ content }}
+      </div>
+    </section>
+  </div>
+
+  {% include footer.html %}
+
+  {% include scripts.html %}
+  {% include googleanalytics.html %}
+
+</body>
+</html>
