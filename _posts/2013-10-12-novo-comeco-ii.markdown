@@ -10,7 +10,7 @@ A long time ago...25 de abril de 2013...
 
 Vish, faz muito tempo que havia "abandonado" o blog, mas hoje acordei decidido a retomar todas as atividades aqui.
 
-Muitas coisas mudaram desde meu último post, o layout do blog mudou um pouco, na real, nem me recordo como era o antigo.
+Muitas coisas mudaram desde meu último post, o layout do blog mudou um pouco, e na real, nem me recordo como era o antigo.
 
 <!-- more -->
 
