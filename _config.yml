@@ -9,6 +9,7 @@ name: _agtlucas
 description:
 url: "http://agtlucas.com"
 excerpt_separator: <!-- more -->
+baseUrl: /
 
 author:
   name: Lucas
