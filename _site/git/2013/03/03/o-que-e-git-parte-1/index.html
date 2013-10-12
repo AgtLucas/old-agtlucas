@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--[if lt IE 10]><meta http-equiv="refresh" content="0; url=/sorry/"><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Prefecth DNS -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//platform.twitter.com">
+  <link rel="dns-prefetch" href="//p.twitter.com">
+  <link rel="dns-prefetch" href="//cdn.api.twitter.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//themes.googleusercontent.com">
+
+  <title>Git - Parte 1 &ndash; AgtLucas</title>
+
+  <meta name="description" content="Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="http://agtlucas.com/git/2013/03/03/o-que-e-git-parte-1/">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Git - Parte 1" />
+  <meta property="og:url" content="http://agtlucas.com/git/2013/03/03/o-que-e-git-parte-1/" />
+  <meta property="og:description" content="" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="https://plus.google.com/112631892276196724070/posts">
+  <meta name="description" content="HTML5, CSS3, JavaScript, PHP, Rails and other stuffs">
+</head>
+<body class="blog">
+
+  <div class="blog-content">
+    <header class="main-header" role="banner">
+
+  <div class="wrap-content">
+    <h1 class="logo">
+      <a href="http://agtlucas.com" data-pjax=".main-content">Lucas</a>
+    </h1>
+
+    <nav class="main-menu cf" role="navigation">
+      <ul class="main-menu-links">
+        <li><a href="http://linkedin.com/in/agtlucas" target="_blank" class="icon-linkedin-rect"></a></li>
+        <li><a href="http://github.com/agtlucas" target="_blank" class="icon-github-circled"></a></li>
+        <li><a href="http://twitter.com/_agtlucas" target="_blank" class="icon-twitter"></a></li>
+      </ul>
+    </nav>
+  </div>
+
+</header><!-- end header -->
+
+    <section class="main-content" role="main" data-content="main">
+      <div class="wrap-content">
+        <article class="post" role="article">
+  <header class="post-info">
+    <small>03 Mar 2013</small>
+  </header>
+  <h2 class="post-title">Git - Parte 1</h2>
+  <section class="post-content">
+    <p>Afinal, o que é esse tal de Git (/ɡɪt/) que tanto se fala nos dias atuais?</p>
+
+<p>Provavelmente você já ouviu esse termo em algum lugar, certo? Não? Qual caverna você esteve?</p>
+
+<p><del>E SVN, já ouviu falar? Esse eu aposto que sim.</del></p>
+
+<p>Então, Git é um sistema de controle de versão open source, criado por um tal de <a href="http://pt.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>. Seu principal objetivo era ajudar no controle e versionamento do <a href="http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git">Kernel de um tal de Linux...</a></p>
+
+<!-- more -->
+
+
+<p>Focado em performance, o Git é extremamente rápido, e muito útil para quem trabalha em equipe, pois facilita e muito a organização e distribuição do fonte do projeto, permitindo várias pessoas editar o mesmo arquivo ao mesmo tempo.</p>
+
+<h3><strong>Ok, e como eu faço para usar o <del><em>Chitê</em></del><em> </em>Git (Guit)?</strong></h3>
+
+<p><del>Você vai precisar de uma tesoura sem ponta...</del></p>
+
+<p>Se você usa OS X e tem instalado o <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, basta executar o seguinte comando no terminal:</p>
+
+<div class="highlight"><pre><code class="text"> 
+$ brew install git
+</code></pre></div>
+
+
+<p>Ou você pode baixar o instalador <a href="http://git-scm.com/download/mac">aqui</a>.</p>
+
+<p>.</p>
+
+<p>Se você usa Linux (Ubuntu), abra uma janela do terminal e:</p>
+
+<div class="highlight"><pre><code class="text"> 
+$ apt-get install git
+</code></pre></div>
+
+
+<p>Se você usa Windows, baixe o instalador <a href="http://git-scm.com/download/win">aqui</a>.</p>
+
+<h3><strong>Git instalado, o que eu faço agora?</strong></h3>
+
+<p>Agora é só começar a usar, não vou explicar todos os detalhes, mas basicamente você vai precisar de um local para armazenar os códigos, basicamente um repositório.</p>
+
+<p>Você pode usar o Dropbox (pergunta pro oráculo como se faz), ou instalar o Git no seu servidor, caso você tenha um. Ou ainda, pode usar serviços como o nada conhecido GitHub e Bitbucket.</p>
+
+<p>Ambos são excelentes, e ambos possuem planos <em>Free </em>a diferença basicamente é que na versão grátis do Bitbucket você pode criar quantos repositórios privados você desejar, porém tem um limite de colaboradores, o que pode ser um problema se você trabalha numa equipe com muitas pessoas.</p>
+
+<p><a href="https://bitbucket.org/plans">Planos e preços Bitbucket</a></p>
+
+<p>Já o GitHub, a sua versão grátis não lhe permite criar nenhum repositório privado, porém se você é estudante como eu, pode conseguir um plano micro, com 5 repositórios privados, para isso clique <a href="https://github.com/edu">neste link e siga os passos</a>. Ora pois, já estava me esquecendo, no GitHub a quantidade de colaboradores é ilimitada, uma boa se você tem uma equipe grande.</p>
+
+<p><a href="https://github.com/plans">Planos e preços do GitHub</a></p>
+
+<p>No próximo post, irei focar no Git em si, como usar, iniciar um repositório, fazer um commit, mandar o código pro servidor/repositório, etc...</p>
+
+<p>Enquanto isso, leia os links que deixarei abaixo, e aguarde o próximo post, que eu espero não demorar tanto para escrever...</p>
+
+<p><a href="http://rogerdudler.github.com/git-guide/index.pt_BR.html">Git - Guia Prático</a></p>
+
+<p><a href="http://git-scm.com/book">eBook - Pro Git (English)</a></p>
+
+<p>Ah, e veja este outro link aqui -> <a href="http://try.github.com/">Try GitHub</a></p>
+
+<p>Au revoir à tous!</p>
+
+  </section>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="" data-via="_agtlucas" data-lang="en">Tweet</a>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <div class="post-comments" id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'agt-lucas',
+      disqus_url = 'http://agtlucas.com/git/2013/03/03/o-que-e-git-parte-1/';
+
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+</article>
+      </div>
+    </section>
+  </div>
+
+  <footer class="main-footer" role="contentinfo">
+
+      <div class="wrap-content">
+        <small>Lucas &copy; 2013 | Proudly powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, <a href="http://github.com" target="_blank">GitHub</a> & <a href="http://yeoman.io" target="_blank">Yeoman</a></small>
+      </div>
+
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="/_bower_components/jquery.js"><\/script>')</script>
+
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-6843282-7');ga('send','pageview');
+</script>
+
+</body>
+</html>
