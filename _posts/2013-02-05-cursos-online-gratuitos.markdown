@@ -4,18 +4,6 @@ date: 2013-02-05 22:18:51
 layout: post
 slug: cursos-online-gratuitos
 title: Cursos online gratuitos
-categories:
-- Cursos
-- Dicas
-tags:
-- Ciência da Computação
-- Computadores
-- Engenharia de Software
-- IA
-- JavaScript
-- PHP
-- Programação
-- Quântica
 ---
 
 Há algum tempo atrás, o conhecimento era algo de difícil acesso, poucas eram os privilegiados que tinham condições de ter um livro para aprender algo novo (Ok, acho que exagerei um pouco, levando em consideração que não precisamos de um livro pra aprender algo novo, anyway...), hoje, a internet é um vasto território, onde encontramos de tudo, de coisas boas à coisas ruins.

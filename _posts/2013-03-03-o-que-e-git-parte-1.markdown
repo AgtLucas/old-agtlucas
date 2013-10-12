@@ -3,14 +3,6 @@ comments: true
 date: 2013-03-03 21:31:42
 layout: post
 slug: o-que-e-git-parte-1
-title: Git - Parte 1
-categories:
-- Git
-tags:
-- Bitbucket
-- Git
-- GitHub
-- Linux
 ---
 
 Afinal, o que é esse tal de Git (/ɡɪt/) que tanto se fala nos dias atuais?
@@ -32,7 +24,7 @@ Focado em performance, o Git é extremamente rápido, e muito útil para quem tr
 
 Se você usa OS X e tem instalado o [Homebrew](http://mxcl.github.com/homebrew/), basta executar o seguinte comando no terminal:
 
-{% highlight text %} 
+{% highlight text %}
 $ brew install git
 {% endhighlight %}
 
@@ -42,7 +34,7 @@ Ou você pode baixar o instalador [aqui](http://git-scm.com/download/mac).
 
 Se você usa Linux (Ubuntu), abra uma janela do terminal e:
 
-{% highlight text %} 
+{% highlight text %}
 $ apt-get install git
 {% endhighlight %}
 
