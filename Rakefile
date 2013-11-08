@@ -59,7 +59,7 @@ namespace :build do
     end
 
     desc "Build _site/ for production"
-    task :pro => recompile_sass do
+    task :pro => :recompile_sass do
         puts "\n## Compiling Sass"
         status = system("sass --style compressed sass/style.scss:css/style.css")
         puts status ? "Success" : "Failed"
