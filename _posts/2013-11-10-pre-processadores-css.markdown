@@ -242,6 +242,7 @@ Não deixe de ler a documentação oficial, entre outros links abaixo:
   <li><a href="http://bourbon.io/" target="_blank">Bourbon</a></li>
   <li><a href="http://neat.bourbon.io/" target="_blank">Bourbon Neat</a></li>
   <li><a href="http://hugogiraudel.com/" target="_blank">Hugo Giraudel</a></li>
+  <li><a href="http://css-tricks.com/sass-style-guide/" target="_blank">Sass Style Guide by Chris Coyier</a></li>
 </ul>
 
 Até a próxima!
