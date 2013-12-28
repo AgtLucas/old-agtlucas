@@ -2,7 +2,6 @@
 layout: post
 title:  "Longest Day"
 date:   2013-12-28 20:36:00
-categories: javascript
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
