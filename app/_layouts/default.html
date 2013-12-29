@@ -8,38 +8,29 @@
 
         <!-- build:css({app,.tmp}) /css/main.css -->
         <!-- Syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/style.css">
         <!-- endbuild -->
 
+        <!-- Typekit -->
+        <script type="text/javascript" src="//use.typekit.net/hcr1thw.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
-    <body>
+    <body class="{{ page.class }}">
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+    <header class="home-header">
+      <nav>
+        <ul>
+          <li><a href="/about-me">About me</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <div class="main">
           {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Lucas<br />
-                <a href="mailto:lucas@agtlucas.com">lucas@agtlucas.com</a>
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+    </div>
 
     <!-- build:js(app) /js/scripts.js -->
     <script src="/js/main.js"></script>
