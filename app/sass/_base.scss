@@ -1,15 +1,50 @@
-body {
-  background: #f3f3f3;
+// Variables
+$black: #000000;
+$awhite: #f3f3f3;
+$agrey: #999999;
+
+.home {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
-.home {
-
+.dark {
+  background: $black;
+  color: $awhite;
 }
 
-.main {
+.peaceful {
+  background: $awhite;
+  color: $black;
+}
+
+.home-header {
+  width: 100%;
+  nav {
+    text-align: center;
+  }
+}
+
+.home-header-links {
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin: 10px 25px;
+    a {
+      color: $agrey;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        color: $awhite;
+        @include transition(all 0.3s ease-in-out);
+      }
+    }
+  }
+}
+
+.hello {
   position: absolute;
   top: 50%;
   left: 50%;
