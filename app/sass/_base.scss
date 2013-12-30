@@ -1,5 +1,6 @@
 // Variables
-$black: #303030;
+$black: #000000;
+$ablack: #202020;
 $awhite: #f3f3f3;
 $agrey: #999999;
 
@@ -9,15 +10,26 @@ $column-width   : 4em;            // each column is 4em wide
 $gutter-width   : 1em;            // 1em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
-header,
-footer {
-  clear: both;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing:
+  border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header,
+footer {
+  clear: both;
 }
 
 .dark {
@@ -46,32 +58,4 @@ body {
         @include transition(all 0.3s ease-in-out);
       }
     }
-}
-
-.main {
-  @include container;
-}
-
-.home-header {
-  width: 100%;
-  nav {
-    text-align: center;
-  }
-}
-
-.home-header-links {
-  padding: 0;
-  list-style: none;
-  li {
-    display: inline-block;
-    margin: 10px 25px;
-    font-size: 14px;
-  }
-}
-
-.hello {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
