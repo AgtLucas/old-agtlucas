@@ -1,5 +1,5 @@
 // Variables
-$black: #000000;
+$black: #303030;
 $awhite: #f3f3f3;
 $agrey: #999999;
 
@@ -12,11 +12,29 @@ $agrey: #999999;
 .dark {
   background: $black;
   color: $awhite;
+  a {
+      color: $agrey;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        color: $awhite;
+        @include transition(all 0.3s ease-in-out);
+      }
+    }
 }
 
 .peaceful {
   background: $awhite;
   color: $black;
+  a {
+      color: $agrey;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        color: $black;
+        @include transition(all 0.3s ease-in-out);
+      }
+    }
 }
 
 .home-header {
@@ -32,15 +50,7 @@ $agrey: #999999;
   li {
     display: inline-block;
     margin: 10px 25px;
-    a {
-      color: $agrey;
-      text-decoration: none;
-      text-transform: uppercase;
-      &:hover {
-        color: $awhite;
-        @include transition(all 0.3s ease-in-out);
-      }
-    }
+    font-size: 14px;
   }
 }
 
