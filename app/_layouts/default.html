@@ -18,9 +18,20 @@
     </head>
     <body class="{{ page.class }} {{ page.skin }}">
 
-    <div class="main">
-          {{ content }}
-    </div>
+      <header class="home-header">
+        <nav>
+          <ul class="home-header-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about-me">About me</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="main">
+            {{ content }}
+      </div>
 
     <!-- build:js(app) /js/scripts.js -->
     <script src="/js/main.js"></script>
