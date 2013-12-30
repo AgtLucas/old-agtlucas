@@ -4,14 +4,6 @@ title:  "Yo Jekyll!"
 categories: jekyll update
 ---
 
-# 'Allo, 'Allo!
-
-You now have
-
-- Jekyll
-- Sass and Compass
-- rdiscount markdown parser and Pygments highlighter
-
-installed.
-
-**Enjoy coding!**
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, sed, odit, temporibus, delectus aspernatur error non est incidunt explicabo accusantium culpa quas exercitationem dolorum rem magni modi quod ducimus quisquam.
+<!-- more -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quam facilis consectetur nihil cupiditate. Eligendi, in, nostrum, nulla consequuntur tempora possimus quae atque vel aliquam tempore doloribus eum asperiores dolore quas maiores voluptatem eveniet nobis reprehenderit sint repudiandae incidunt architecto dicta quaerat provident consectetur accusantium enim voluptates dolores ab repellendus. Tenetur, quos, impedit, neque magni voluptates alias eveniet voluptas autem perspiciatis dolorem ullam numquam animi. Quae, sed, dolor, reprehenderit fuga voluptatibus praesentium unde atque delectus veritatis non recusandae cumque aspernatur ab. Eligendi, cumque, sit, neque culpa ex odit provident recusandae nemo asperiores quod deserunt accusamus aliquid ab at voluptates. Dolore, dolores, quisquam, nisi nihil totam enim eveniet dignissimos maiores magni laborum voluptatibus molestias libero explicabo voluptate aliquam voluptatem illo quae sapiente blanditiis qui ipsum nam ut dolor? Omnis, natus, ab, labore, laboriosam asperiores praesentium laborum eum id voluptatibus earum dolores non totam porro deleniti consequatur dignissimos sequi voluptate eaque atque iusto? In, fugit voluptatem non sunt assumenda libero incidunt saepe dicta eius eos veniam ad tenetur dignissimos nesciunt sit doloribus cumque reiciendis laborum aut ipsa facere dolorem voluptas nostrum ut beatae quis necessitatibus neque officia unde cupiditate quo excepturi ullam quasi. Blanditiis, doloremque, inventore exercitationem aut rem labore facere eos.

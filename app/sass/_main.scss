@@ -7,13 +7,25 @@
   }
 }
 
-.main-about-content {
+.content {
   margin-top: 50px;
   font-size: 20px;
-  text-align: justify;
   h1 {
     text-align: center;
   }
+}
+
+.posts {
+  padding: 0;
+  list-style: none;
+}
+
+.read-more {
+  font-size: 18px;
+}
+
+.main-about-content {
+  text-align: justify;
 }
 
 .main-header {

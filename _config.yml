@@ -8,6 +8,7 @@ description: Front-End Ops
 author:
   name: Lucas
   email: lucas@agtlucas.com
+excerpt_separator: <!-- more -->
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',

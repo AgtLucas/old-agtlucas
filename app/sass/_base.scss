@@ -1,5 +1,6 @@
 // Variables
 $black: #000000;
+$white: #FFFFFF;
 $ablack: #202020;
 $awhite: #f3f3f3;
 $agrey: #999999;
@@ -28,7 +29,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-font-smoothing: optimizeLegibility;;
+  -webkit-font-smoothing: antialiased;
 }
 
 header,
@@ -71,7 +72,7 @@ blockquote {
 }
 
 .peaceful {
-  background: $awhite;
+  background: $white;
   color: $ablack;
   a {
     &:hover {
