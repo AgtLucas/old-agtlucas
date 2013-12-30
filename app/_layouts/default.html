@@ -18,13 +18,13 @@
     </head>
     <body class="{{ page.class }} {{ page.skin }}">
 
-      <header class="home-header">
+      <header class="main-header">
         <nav>
-          <ul class="home-header-links">
-            <li><a href="/" data-pjax=".main">Home</a></li>
-            <li><a href="/about-me" data-pjax=".main">About me</a></li>
-            <li><a href="/blog" data-pjax=".main">Blog</a></li>
-            <li><a href="/contact" data-pjax=".main">Contact</a></li>
+          <ul class="header-links">
+            <li><h3 class="logo"><a href="/">Lucas</a></h3></li>
+            {% assign pages = site.pages | sort:"url" %}
+            {% for p in pages %}{% if p.nav == true %}<li><a {% if p.url == page.url %}class="active"{% endif %} href="/{{ p.class }}">{{ p.title }}</a></li>
+            {% endif %}{% endfor %}
           </ul>
         </nav>
       </header>

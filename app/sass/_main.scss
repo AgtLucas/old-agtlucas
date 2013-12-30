@@ -8,7 +8,7 @@
 }
 
 .main-about-content {
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 20px;
   text-align: justify;
   h1 {
@@ -16,27 +16,24 @@
   }
 }
 
-.me {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-  height: auto;
-}
-
-.home-header {
+.main-header {
   width: 100%;
   nav {
     text-align: center;
   }
 }
 
-.home-header-links {
+.header-links {
   padding: 0;
   list-style: none;
   li {
     display: inline-block;
-    margin: 10px 15px;
+    margin: 0 15px;
     font-size: 14px;
+    a {
+      text-transform: uppercase;
+      color: $agrey;
+    }
   }
 }
 

@@ -3,6 +3,9 @@ $black: #000000;
 $ablack: #202020;
 $awhite: #f3f3f3;
 $agrey: #999999;
+$bluegrey: #2A303B;
+$ablue: #08c;
+$grey: #555555;
 
 // Susy
 $total-columns  : 12;             // a 12-column grid
@@ -25,6 +28,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  -webkit-font-smoothing: optimizeLegibility;;
 }
 
 header,
@@ -32,30 +36,53 @@ footer {
   clear: both;
 }
 
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $ablue;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
+}
+
+blockquote {
+  padding-left: 1.25em;
+  margin: 1.875em 0;
+  border-left: 5px solid $ablue;
+  font-size: 20px;
+  text-align: left;
+}
+
 .dark {
   background: $black;
   color: $awhite;
   a {
-      color: $agrey;
-      text-decoration: none;
-      text-transform: uppercase;
-      &:hover {
-        color: $awhite;
-        @include transition(all 0.3s ease-in-out);
-      }
+    &:hover {
+      color: $awhite;
     }
+  }
+  blockquote {
+    color: $agrey;
+  }
 }
 
 .peaceful {
   background: $awhite;
-  color: $black;
+  color: $ablack;
   a {
-      color: $agrey;
-      text-decoration: none;
-      text-transform: uppercase;
-      &:hover {
-        color: $black;
-        @include transition(all 0.3s ease-in-out);
-      }
+    &:hover {
+      color: $ablack;
     }
+  }
+  blockquote {
+    color: $grey;
+  }
+}
+
+.active {
+  font-weight: bold;
 }
