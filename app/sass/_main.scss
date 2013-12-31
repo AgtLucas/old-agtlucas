@@ -90,6 +90,9 @@
     }
     li:nth-child(even) {
       padding-right: 0;
+      @media all and (max-width: 43.375em) {
+        padding-left: 0;
+      }
     }
   }
   h4 {
