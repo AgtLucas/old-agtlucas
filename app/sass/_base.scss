@@ -2,6 +2,7 @@
 $black: #000000;
 $white: #FFFFFF;
 $ablack: #202020;
+$aablack: #1d1f21;
 $awhite: #f3f3f3;
 $agrey: #999999;
 $bluegrey: #2A303B;
@@ -81,7 +82,7 @@ blockquote {
 }
 
 .dark {
-  background: $black;
+  background: $aablack;
   color: $awhite;
   a {
     &:hover {
@@ -98,7 +99,7 @@ blockquote {
     }
   }
   .main-footer {
-    background: rgba(0,0,0,0.9);
+    background: rgba(29,31,33,0.9);
   }
 }
 
