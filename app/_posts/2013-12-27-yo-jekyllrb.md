@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Yo Jekyll!"
-categories: jekyll update
+categories: blog
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, sed, odit, temporibus, delectus aspernatur error non est incidunt explicabo accusantium culpa quas exercitationem dolorum rem magni modi quod ducimus quisquam.

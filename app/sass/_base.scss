@@ -53,6 +53,7 @@ footer {
   padding: 5px;
   bottom: 0;
   width: 100%;
+  color: $agrey;
   small {
     text-align: center;
     display: block;
@@ -100,6 +101,11 @@ blockquote {
   }
   .main-footer {
     background: rgba(29,31,33,0.9);
+  }
+  .posts {
+    li {
+      border-bottom: 1px solid $black;
+    }
   }
 }
 
