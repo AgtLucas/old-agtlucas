@@ -70,6 +70,34 @@
   font-size: rem(22);
 }
 
+.prev-next-posts {
+  margin-top: 40px;
+  width: 100%;
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+    li {
+      padding: 20px;
+      display: inline-block;
+      width: 324px;
+      max-width: 100%;
+      font-size: 20px;
+      vertical-align: top;
+    }
+    li:nth-child(odd) {
+      padding-left: 0;
+    }
+    li:nth-child(even) {
+      padding-right: 0;
+    }
+  }
+  h4 {
+    color: $agrey;
+    margin: 0;
+  }
+}
+
 .main-about-content {
   text-align: justify;
 }

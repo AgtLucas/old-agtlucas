@@ -11,4 +11,15 @@ skin: peaceful
   <div class="post">
   {{ content }}
   </div>
+
+  <section class="prev-next-posts">
+    <ul>
+      {% if page.next.url %}
+      <li class="next-post"><a href="{{ page.next.url }}"><h4>Next Post</h4><span>{{ page.next.title }}</span></a></li>
+      {% endif %}
+      {% if page.previous.url %}
+      <li class="prev-post"><a href="{{ page.previous.url }}"><h4>Previous Post</h4><span>{{ page.previous.title }}</span></a></li>
+      {% endif %}
+    </ul>
+  </section>
 </div>
