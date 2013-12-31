@@ -1,5 +1,7 @@
 <head>
+  {% if page.title != 'Sorry' %}
   <!--[if lt IE 10]><meta http-equiv="refresh" content="0; url=/sorry/"><![endif]-->
+  {% endif %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{{ page.title }} - Lucas</title>
@@ -24,11 +26,17 @@
   <script>try{Typekit.load();}catch(e){}</script>
 
   <link rel="canonical" href="http://agtlucas.com{{ page.url | canonical }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@_agtlucas">
+  <meta name="twitter:creator" content="@_agtlucas">
+  <meta property="og:url" content="http://agtlucas.com{{ page.url }}">
+  <!-- <meta property="og:image" content=""> -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:url" content="http://agtlucas.com{{ page.url }}" />
   <meta property="og:description" content="{{ page.description }}" />
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
-  <link rel="author" href="https://plus.google.com/112631892276196724070/posts">
-  <meta name="description" content="HTML5, CSS3, JavaScript, Python, PHP, Ruby, Rails and other stuffs">
+  <link rel="author" href="https://plus.google.com/+LucasChurchill">
+  <meta name="description" content="HTML5, CSS3, JavaScript, NodeJS, Python, Ruby, PHP, and other stuffs">
+
 </head>

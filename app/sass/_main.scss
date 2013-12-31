@@ -66,10 +66,28 @@
   }
 }
 
-.post-title {
+.post-title-link {
   font-size: rem(22);
   @media all and (max-width: 33.4375em) {
     padding-right: 20px;
+  }
+}
+
+.share-this {
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 1px solid $awhite;
+  h4 {
+    margin: 0;
+  }
+}
+
+.social-button-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  li {
+    display: inline-block;
   }
 }
 
