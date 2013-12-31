@@ -7,12 +7,21 @@ $agrey: #999999;
 $bluegrey: #2A303B;
 $ablue: #08c;
 $grey: #555555;
+$font-size: 16;
 
 // Susy
 $total-columns  : 12;             // a 12-column grid
 $column-width   : 4em;            // each column is 4em wide
 $gutter-width   : 1em;            // 1em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+@function rem($pixels, $context: $font-size) {
+   @return#{$pixels/$context}rem;
+}
+
+@function em($pixels, $context: $font-size) {
+   @return#{$pixels/$context}em;
+}
 
 *,
 *:before,
@@ -28,6 +37,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  font-size: rem(16);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -35,6 +45,17 @@ body {
 header,
 footer {
   clear: both;
+}
+
+.main-footer {
+  position: fixed;
+  padding: 10px 10px 0 10px;
+  bottom: 0;
+  width: 100%;
+  small {
+    text-align: center;
+    display: block;
+  }
 }
 
 img {
@@ -55,6 +76,7 @@ blockquote {
   margin: 1.875em 0;
   border-left: 5px solid $ablue;
   font-size: 20px;
+  font-size: rem(20);
   text-align: left;
 }
 
@@ -69,6 +91,15 @@ blockquote {
   blockquote {
     color: $agrey;
   }
+  .post-title {
+    color: $agrey;
+    &:hover {
+      color: $awhite;
+    }
+  }
+  .main-footer {
+    background: rgba(0,0,0,0.9);
+  }
 }
 
 .peaceful {
@@ -81,6 +112,15 @@ blockquote {
   }
   blockquote {
     color: $grey;
+  }
+  .post-title {
+    color: $ablack;
+    &:hover {
+      color: $ablue;
+    }
+  }
+  .main-footer {
+    background: rgba(255,255,255,0.9);
   }
 }
 

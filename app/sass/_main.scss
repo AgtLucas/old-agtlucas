@@ -1,33 +1,3 @@
-.main {
-  @include container;
-  margin: auto;
-  @media all and (max-width: 80em) {
-    width: 42.5em;
-    max-width: 100%;
-  }
-}
-
-.content {
-  margin-top: 50px;
-  font-size: 20px;
-  h1 {
-    text-align: center;
-  }
-}
-
-.posts {
-  padding: 0;
-  list-style: none;
-}
-
-.read-more {
-  font-size: 18px;
-}
-
-.main-about-content {
-  text-align: justify;
-}
-
 .main-header {
   width: 100%;
   nav {
@@ -42,6 +12,7 @@
     display: inline-block;
     margin: 0 15px;
     font-size: 14px;
+    font-size: rem(14);
     a {
       text-transform: uppercase;
       color: $agrey;
@@ -54,4 +25,51 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.main {
+  @include container;
+  margin: auto;
+  padding-bottom: 120px;
+  @media all and (max-width: 80em) {
+    width: 42.5em;
+    max-width: 100%;
+  }
+}
+
+.content {
+  margin-top: 50px;
+  font-size: 20px;
+  font-size: rem(20);
+  h1 {
+    text-align: center;
+  }
+}
+
+.logo {
+  font-size: 18px;
+  font-size: rem(18);
+}
+
+.posts {
+  padding: 0;
+  list-style: none;
+  li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid $awhite;
+  }
+  span {
+    float: right;
+    font-size: 15px;
+    font-size: rem(15);
+    margin-top: 10px;
+  }
+}
+
+.post-title {
+  font-size: rem(22);
+}
+
+.main-about-content {
+  text-align: justify;
 }

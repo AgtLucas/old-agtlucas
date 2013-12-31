@@ -9,15 +9,7 @@ nav: true
 <div class="content main-blog-content">
   <ul class="posts">
     {% for post in site.posts %}
-      <li><h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2></li>
-      <section class="post-content">
-        {{ post.excerpt }}
-      </section>
-      <small class="read-more">
-        {% if post.excerpt %}
-        <a href="{{ post.url }}" class="read-more-link" data-pjax=".main-content">Read More</a>
-        {% endif %}
-      </small>
+      <li><span>{{ post.date | date_to_string }}</span><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>

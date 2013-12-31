@@ -21,7 +21,7 @@ future: true
 show_drafts: true
 
 permalink: date
-paginate: 20
+paginate: all
 paginate_path: 'page:num'
 
 # Markdown library
