@@ -22,6 +22,7 @@
       .bind("pjax:complete", function() {
         $(this).fadeIn(duration),
         fitVidsJs(),
+        // $('.gist-block').show(),
         NProgress.done()
       })
       .bind("pjax:success", function() {

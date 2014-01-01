@@ -83,6 +83,14 @@ blockquote {
 }
 
 .dark {
+  ::-moz-selection {
+    background: $white;
+    color: $aablack;
+  }
+  ::selection {
+    background: $white;
+    color: $aablack;
+  }
   background: $aablack;
   color: $awhite;
   a {
@@ -107,12 +115,21 @@ blockquote {
       border-bottom: 1px solid $black;
     }
   }
+  .prev-next-posts,
   .share-this {
     border-top: 1px solid $black;
   }
 }
 
 .peaceful {
+  ::-moz-selection {
+    background: $aablack;
+    color: $white;
+  }
+  ::selection {
+    background: $aablack;
+    color: $white;
+  }
   background: $white;
   color: $ablack;
   a {

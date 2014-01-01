@@ -33,39 +33,183 @@ O Sass possui dois tipos de sintaxe com extensões diferentes (.sass e .scss); a
 
 Como falei acima, um dos principais benefícios dos pré-processadores é adicionar funcionalidades. Sabe aquela cor em hexadecimal que tu nunca lembra de cabeça, não seria uma boa armazenar ela em uma variável? Então...
 
-<script src="https://gist.github.com/AgtLucas/8204606.js"></script>
+{% highlight scss %}
+// .scss
+$azul: #6f92ba;
+
+p {
+  color: $azul;
+}
+
+// .sass
+$azul: #6f92ba
+
+p
+  color: $azul
+{% endhighlight %}
 
 Outra coisa bacana são os aninhamentos, ao invés de escrever assim:
 
-<script src="https://gist.github.com/AgtLucas/8204615.js"></script>
+{% highlight css %}
+ul {
+  list-style: none;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  color: tomato;
+}
+
+ul li a:hover {
+  color: teal;
+}
+{% endhighlight %}
 
 Com o sass você pode fazer melhor, pode fazer assim:
 
-<script src="https://gist.github.com/AgtLucas/8204617.js"></script>
+{% highlight scss %}
+// .scss
+ul {
+  list-style: none;
+  li {
+    float: left;
+    a {
+      color: tomato;
+      &:hover {
+        color: teal;
+      }
+    }
+  }
+}
+
+// .sass
+ul
+  list-style: none
+  li
+    float: left
+    a
+      color: tomato
+      &:hover
+        color: teal
+{% endhighlight %}
 
 > Cuidado com os aninhamentos, pelo bem da performance, evite usar mais de 3 aninhamentos, use classes!
 
 Cálculos, sim, com o Sass você pode fazer uso de funções matématicas para alcançar seu objetivo:
 
-<script src="https://gist.github.com/AgtLucas/8204619.js"></script>
+{% highlight scss %}
+// Podemos usar todas as operações
+// .scss
+margin: 40px + 10px;
+margin: 40px - 10px;
+margin: 40px * 10px;
+margin: (40px / 10px);
+
+// .sass
+margin: 40px + 10px
+margin: 40px - 10px
+margin: 40px * 10px
+margin: (40px - 10px)
+{% endhighlight %}
 
 Ainda na parte de cálculos, por padrão o Sass possui algumas funções que você pode usar:
 
-<script src="https://gist.github.com/AgtLucas/8204621.js"></script>
+{% highlight scss %}
+// .scss
+width: percentage(2.5); // retorna => width: 250%;
+width: round(10.6px); // retorna => width: 10px;
+width: ceil(10.6px); // retorna => width: 11px;
+width: floor(2.5px); // retorna => width: 2px;
+width: abs(-2.5px); // retorna => width: 2.5px;
+
+// .sass
+width: percentage(2.5)
+// etc...
+{% endhighlight %}
 
 Existem muitas outras operações envolvendo números e até mesmo cores!
 
 Falando um pouco do reuso, podemos fazer algo assim:
 
-<script src="https://gist.github.com/AgtLucas/8204623.js"></script>
+{% highlight scss %}
+// .scss
+.btn {
+  width: 140px
+  padding: 10px;
+}
+.btn-success {
+  @extend .btn;
+  background: green;
+}
+
+// Resultado:
+.btn,
+.btn-success {
+  width: 140px
+  padding: 10px;
+}
+.btn-success {
+  background: green;
+}
+{% endhighlight %}
 
 Mixins são funções que você escreve, vejamos um exemplo:
 
-<script src="https://gist.github.com/AgtLucas/8204624.js"></script>
+{% highlight scss %}
+// .scss
+@mixin box($bg-color, $color) {
+  background: $bg-color;
+  color: $color;
+}
+
+// Usando...
+// .scss
+.big-box {
+  @include box(black, white)
+}
+
+// .sass
+// Repare que usando .sass, a figura muda um pouco, usamos o sinal de + ao invés da palavra @include
+.big-box
+  +box(black, white)
+{% endhighlight %}
 
 Posso até mesmo usar while, for, if, etc
 
-<script src="https://gist.github.com/AgtLucas/8204627.js"></script>
+{% highlight scss %}
+// .scss
+$i: 1;
+
+@while $i <= 6 {
+  h#{$i} {
+    font-size: 50px - ($i* 5px);
+  }
+  $i: $i + 1;
+}
+
+// Resultado:
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 30px;
+}
+h5 {
+  font-size: 25px;
+}
+h6 {
+  font-size: 20px;
+}
+{% endhighlight %}
 
 Bem legal!
 
@@ -77,7 +221,12 @@ Digamos que eu tenha 3 arquivos css separados, e chamo eles separadamente no hea
 
 > Posso criar um arquivo style.scss e nele incluir meus imports
 
-<script src="https://gist.github.com/AgtLucas/8204630.js"></script>
+{% highlight scss %}
+// .scss
+@import 'normalize';
+@import 'base';
+@import 'layout';
+{% endhighlight %}
 
 O resultado é 1 arquivo apenas, com o conteúdo dos 3 arquivos, e apenas uma requisição :)
 

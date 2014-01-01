@@ -94,6 +94,7 @@
 .prev-next-posts {
   margin-top: 40px;
   width: 100%;
+  border-top: 1px solid $awhite;
   ul {
     list-style: none;
     padding: 0;
@@ -124,4 +125,9 @@
 
 .main-about-content {
   text-align: justify;
+}
+
+.highlight {
+  background: $awhite;
+  padding: 20px;
 }
