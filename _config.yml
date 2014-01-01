@@ -4,6 +4,7 @@
 # 3. config.yml
 
 name: agtlucas
+domain: agtlucas.com
 description: Front-End Ops
 author:
   name: Lucas
