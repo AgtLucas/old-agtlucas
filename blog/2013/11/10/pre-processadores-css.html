@@ -1,4 +1,144 @@
-<!DOCTYPE html><html lang=en><head><!--[if lt IE 10]><meta http-equiv="refresh" content="0; url=/sorry/"><![endif]--><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Pré-Processadores CSS - Lucas</title><meta name=viewport content="width=device-width"><!-- Prefecth DNS --><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//platform.twitter.com><link rel=dns-prefetch href=//p.twitter.com><link rel=dns-prefetch href=//cdn.api.twitter.com><link rel=dns-prefetch href=//www.google-analytics.com><link rel=dns-prefetch href=//themes.googleusercontent.com><link rel=stylesheet href=/css/6c35.main.css><!-- Typekit --><script src=//use.typekit.net/hcr1thw.js></script><script>try{Typekit.load();}catch(e){}</script><link rel=canonical href=http://agtlucas.com/blog/2013/11/10/pre-processadores-css.html><meta name=twitter:card content=summary><meta name=twitter:site content=@_agtlucas><meta name=twitter:creator content=@_agtlucas><meta property=og:url content=http://agtlucas.com/blog/2013/11/10/pre-processadores-css.html><!-- <meta property="og:image" content=""> --><meta property=og:type content=website><meta property=og:title content="Pré-Processadores CSS"><meta property=og:description content=""><link rel="shortcut icon" href=/img/favicon.ico><link rel=author href=https://plus.google.com/+LucasChurchill><meta name=description content="HTML5, CSS3, JavaScript, NodeJS, Python, Ruby, PHP, and other stuffs"></head><body class="blog-post peaceful"><header class=main-header><nav><ul class=header-links><li><h3 class=logo><a href=/ data-pjax=.main>Lucas</a></h3></li><li><a href=/about data-pjax=.main>About</a></li><li><a href=/blog data-pjax=.main>Blog</a></li><li><a href=/contact data-pjax=.main>Contact</a></li></ul></nav></header><div class=main><div class="content post-content"><h2 class=post-title>Pré-Processadores CSS</h2><small class=meta>10 Nov 2013</small><div class=post><p>Olá,</p><p>Mais uma vez sumi, e hoje voltei :)</p><p>Como descrito no título do post, vou tentar escrever um pouco sobre os pré-processadores css, (lembrando que existem os pré-processadores de HTML e JS).</p><!-- more --><p>CSS é uma linguagem simples, que tem por objetivo fazer uma tarefa que até pouco tempo atrás era simples, mas a Web evoluiu, tudo evoluiu, e algumas coisas começaram a ficar complexas, com o CSS não foi diferente.</p><p>Os sites foram ficando complexos, tornando-se verdadeiros sistemas, e os arquivos CSS naturalmente gigantes, manutenção complicada e nada de reuso.</p><p>Com o surgimento dos pré-processadores de CSS, tudo ficou + divertido novamente.</p><p>Atualmente, temos 3 pré-processadores de CSS bem conhecidos e utilizados, são eles: <a href=http://lesscss.org/ target=_blank>Less</a>, <a href=http://sass-lang.com target=_blank>Sass</a> e <a href=http://learnboost.github.io/stylus/ target=_blank>Stylus</a> (Ok, esse último nem é tão usado assim, mas tudo bem).</p><p>Basicamente, os pré-processadores CSS servem para adicionar funcionalidades e tornar o desenvolvimento de CSS mais ágil e dinâmico, facilitando o reuso e aumentando a produtividade.</p><blockquote><p>Todos os pré-processadores citados acima são compilados para CSS, ou seja, no final o seu arquivo vai ser .css, simples assim.</p></blockquote><p>O Less, utiliza JavaScript (NodeJS) para compilar, assim como o Stylus, já o Sass, por padrão utiliza Ruby, ou seja, você precisa ter Ruby instalado para usar, porém, existem compiladores em <a href=https://github.com/andrew/node-sass target=_blank>NodeJS</a> e <a href=https://github.com/hcatlin/libsass target=_blank>C</a>.</p><p>Não vou entrar em detalhes de qual é o melhor, ou falar pra você usar X pois o Z te dá muita liberdade e seu código fica uma bagunça, vou apenas mostrar alguns exemplos do Sass, que é o meu pré-processador preferido.</p><p>O Sass possui dois tipos de sintaxe com extensões diferentes (.sass e .scss); a primeira e mais antiga, existe desde a primeira versão do Sass, inspirado pelo Ruby, você não precisa se preocupar com ponto e vírgula, apenas com espaço e identação. Já a segunda, surgiu em versão posterior, e se parece como CSS normal, atualmente é a mais utilizada.</p><p>Como falei acima, um dos principais benefícios dos pré-processadores é adicionar funcionalidades. Sabe aquela cor em hexadecimal que tu nunca lembra de cabeça, não seria uma boa armazenar ela em uma variável? Então...</p><script src=https://gist.github.com/AgtLucas/8204606.js></script><p>Outra coisa bacana são os aninhamentos, ao invés de escrever assim:</p><script src=https://gist.github.com/AgtLucas/8204615.js></script><p>Com o sass você pode fazer melhor, pode fazer assim:</p><script src=https://gist.github.com/AgtLucas/8204617.js></script><blockquote><p>Cuidado com os aninhamentos, pelo bem da performance, evite usar mais de 3 aninhamentos, use classes!</p></blockquote><p>Cálculos, sim, com o Sass você pode fazer uso de funções matématicas para alcançar seu objetivo:</p><script src=https://gist.github.com/AgtLucas/8204619.js></script><p>Ainda na parte de cálculos, por padrão o Sass possui algumas funções que você pode usar:</p><script src=https://gist.github.com/AgtLucas/8204621.js></script><p>Existem muitas outras operações envolvendo números e até mesmo cores!</p><p>Falando um pouco do reuso, podemos fazer algo assim:</p><script src=https://gist.github.com/AgtLucas/8204623.js></script><p>Mixins são funções que você escreve, vejamos um exemplo:</p><script src=https://gist.github.com/AgtLucas/8204624.js></script><p>Posso até mesmo usar while, for, if, etc</p><script src=https://gist.github.com/AgtLucas/8204627.js></script><p>Bem legal!</p><p>Hoje outro termo que sempre se ouve por aí é modularização, quebrar o seu código em vários pedaços para facilitar a manutenção e organização.</p><p>Com o Sass (ou melhor, os pré-processadores css), podemos usar esse conceito de módulos sem nos preocupar com "quanto + módulos, + requisições".</p><p>Digamos que eu tenha 3 arquivos css separados, e chamo eles separadamente no head da minha página, com o Sass, podemos usar o @import:</p><blockquote><p>Posso criar um arquivo style.scss e nele incluir meus imports</p></blockquote><script src=https://gist.github.com/AgtLucas/8204630.js></script><p>O resultado é 1 arquivo apenas, com o conteúdo dos 3 arquivos, e apenas uma requisição :)</p><p>É isso, espero ter cobrido o básico do básico sobre pré-processadores, neste caso o Sass.</p><p>Não deixe de ler a documentação oficial, entre outros links abaixo:</p><ul><li><a href=http://sass-lang.com/documentation/file.SASS_REFERENCE.html target=blank>Documentação Sass</a></li><li><a href=http://thesassway.com/ target=_blank>The Sass Way</a></li><li><a href=http://compass-style.org/ target=_blank>Compass</a></li><li><a href=http://bourbon.io/ target=_blank>Bourbon</a></li><li><a href=http://neat.bourbon.io/ target=_blank>Bourbon Neat</a></li><li><a href=http://hugogiraudel.com/ target=_blank>Hugo Giraudel</a></li><li><a href=http://css-tricks.com/sass-style-guide/ target=_blank>Sass Style Guide by Chris Coyier</a></li></ul><p>Até a próxima!</p></div><!-- <section class="share-this">
+<!DOCTYPE html><html lang=en><head><!--[if lt IE 10]><meta http-equiv="refresh" content="0; url=/sorry/"><![endif]--><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Pré-Processadores CSS - Lucas</title><meta name=viewport content="width=device-width"><!-- Prefecth DNS --><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//platform.twitter.com><link rel=dns-prefetch href=//p.twitter.com><link rel=dns-prefetch href=//cdn.api.twitter.com><link rel=dns-prefetch href=//www.google-analytics.com><link rel=dns-prefetch href=//themes.googleusercontent.com><link rel=stylesheet href=/css/6f20.main.css><!-- Typekit --><script src=//use.typekit.net/hcr1thw.js></script><script>try{Typekit.load();}catch(e){}</script><link rel=canonical href=http://agtlucas.com/blog/2013/11/10/pre-processadores-css.html><meta name=twitter:card content=summary><meta name=twitter:site content=@_agtlucas><meta name=twitter:creator content=@_agtlucas><meta property=og:url content=http://agtlucas.com/blog/2013/11/10/pre-processadores-css.html><!-- <meta property="og:image" content=""> --><meta property=og:type content=website><meta property=og:title content="Pré-Processadores CSS"><meta property=og:description content=""><link rel="shortcut icon" href=/img/favicon.ico><link rel=author href=https://plus.google.com/+LucasChurchill><meta name=description content="HTML5, CSS3, JavaScript, NodeJS, Python, Ruby, PHP, and other stuffs"></head><body class="blog-post peaceful"><header class=main-header><nav><ul class=header-links><li><h3 class=logo><a href=/ data-pjax=.main>Lucas</a></h3></li><li><a href=/about data-pjax=.main>About</a></li><li><a href=/blog data-pjax=.main>Blog</a></li><li><a href=/contact data-pjax=.main>Contact</a></li></ul></nav></header><div class=main><div class="content post-content"><h2 class=post-title>Pré-Processadores CSS</h2><small class=meta>10 Nov 2013</small><div class=post><p>Olá,</p><p>Mais uma vez sumi, e hoje voltei :)</p><p>Como descrito no título do post, vou tentar escrever um pouco sobre os pré-processadores css, (lembrando que existem os pré-processadores de HTML e JS).</p><!-- more --><p>CSS é uma linguagem simples, que tem por objetivo fazer uma tarefa que até pouco tempo atrás era simples, mas a Web evoluiu, tudo evoluiu, e algumas coisas começaram a ficar complexas, com o CSS não foi diferente.</p><p>Os sites foram ficando complexos, tornando-se verdadeiros sistemas, e os arquivos CSS naturalmente gigantes, manutenção complicada e nada de reuso.</p><p>Com o surgimento dos pré-processadores de CSS, tudo ficou + divertido novamente.</p><p>Atualmente, temos 3 pré-processadores de CSS bem conhecidos e utilizados, são eles: <a href=http://lesscss.org/ target=_blank>Less</a>, <a href=http://sass-lang.com target=_blank>Sass</a> e <a href=http://learnboost.github.io/stylus/ target=_blank>Stylus</a> (Ok, esse último nem é tão usado assim, mas tudo bem).</p><p>Basicamente, os pré-processadores CSS servem para adicionar funcionalidades e tornar o desenvolvimento de CSS mais ágil e dinâmico, facilitando o reuso e aumentando a produtividade.</p><blockquote><p>Todos os pré-processadores citados acima são compilados para CSS, ou seja, no final o seu arquivo vai ser .css, simples assim.</p></blockquote><p>O Less, utiliza JavaScript (NodeJS) para compilar, assim como o Stylus, já o Sass, por padrão utiliza Ruby, ou seja, você precisa ter Ruby instalado para usar, porém, existem compiladores em <a href=https://github.com/andrew/node-sass target=_blank>NodeJS</a> e <a href=https://github.com/hcatlin/libsass target=_blank>C</a>.</p><p>Não vou entrar em detalhes de qual é o melhor, ou falar pra você usar X pois o Z te dá muita liberdade e seu código fica uma bagunça, vou apenas mostrar alguns exemplos do Sass, que é o meu pré-processador preferido.</p><p>O Sass possui dois tipos de sintaxe com extensões diferentes (.sass e .scss); a primeira e mais antiga, existe desde a primeira versão do Sass, inspirado pelo Ruby, você não precisa se preocupar com ponto e vírgula, apenas com espaço e identação. Já a segunda, surgiu em versão posterior, e se parece como CSS normal, atualmente é a mais utilizada.</p><p>Como falei acima, um dos principais benefícios dos pré-processadores é adicionar funcionalidades. Sabe aquela cor em hexadecimal que tu nunca lembra de cabeça, não seria uma boa armazenar ela em uma variável? Então...</p><div class=highlight><pre><code class=scss><span class=c1>// .scss</span>
+<span class=nv>$azul</span><span class=o>:</span> <span class=mh>#6f92ba</span><span class=p>;</span>
+
+<span class=nt>p</span> <span class=p>{</span>
+  <span class=na>color</span><span class=o>:</span> <span class=nv>$azul</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=c1>// .sass</span>
+<span class=nv>$azul</span><span class=o>:</span> <span class=mh>#6f92ba</span>
+
+<span class=n>p</span>
+  <span class=no>color</span><span class=o>:</span> <span class=nv>$azul</span>
+</code></pre></div><p>Outra coisa bacana são os aninhamentos, ao invés de escrever assim:</p><div class=highlight><pre><code class=css><span class=nt>ul</span> <span class=p>{</span>
+  <span class=k>list-style</span><span class=o>:</span> <span class=k>none</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=nt>ul</span> <span class=nt>li</span> <span class=p>{</span>
+  <span class=k>float</span><span class=o>:</span> <span class=k>left</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=nt>ul</span> <span class=nt>li</span> <span class=nt>a</span> <span class=p>{</span>
+  <span class=k>color</span><span class=o>:</span> <span class=nb>tomato</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=nt>ul</span> <span class=nt>li</span> <span class=nt>a</span><span class=nd>:hover</span> <span class=p>{</span>
+  <span class=k>color</span><span class=o>:</span> <span class=nb>teal</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></div><p>Com o sass você pode fazer melhor, pode fazer assim:</p><div class=highlight><pre><code class=scss><span class=c1>// .scss</span>
+<span class=nt>ul</span> <span class=p>{</span>
+  <span class=na>list-style</span><span class=o>:</span> <span class=no>none</span><span class=p>;</span>
+  <span class=nt>li</span> <span class=p>{</span>
+    <span class=na>float</span><span class=o>:</span> <span class=no>left</span><span class=p>;</span>
+    <span class=nt>a</span> <span class=p>{</span>
+      <span class=na>color</span><span class=o>:</span> <span class=ni>tomato</span><span class=p>;</span>
+      <span class=k>&amp;</span><span class=nd>:hover</span> <span class=p>{</span>
+        <span class=na>color</span><span class=o>:</span> <span class=nb>teal</span><span class=p>;</span>
+      <span class=p>}</span>
+    <span class=p>}</span>
+  <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=c1>// .sass</span>
+<span class=na>ul</span>
+  <span class=na>list-style</span><span class=o>:</span> <span class=no>none</span>
+  <span class=n>li</span>
+    <span class=no>float</span><span class=o>:</span> <span class=no>left</span>
+    <span class=n>a</span>
+      <span class=no>color</span><span class=o>:</span> <span class=ni>tomato</span>
+      <span class=o>&amp;:</span><span class=n>hover</span>
+        <span class=no>color</span><span class=o>:</span> <span class=nb>teal</span>
+</code></pre></div><blockquote><p>Cuidado com os aninhamentos, pelo bem da performance, evite usar mais de 3 aninhamentos, use classes!</p></blockquote><p>Cálculos, sim, com o Sass você pode fazer uso de funções matématicas para alcançar seu objetivo:</p><div class=highlight><pre><code class=scss><span class=c1>// Podemos usar todas as operações</span>
+<span class=c1>// .scss</span>
+<span class=na>margin</span><span class=o>:</span> <span class=mi>40</span><span class=kt>px</span> <span class=o>+</span> <span class=mi>10</span><span class=kt>px</span><span class=p>;</span>
+<span class=na>margin</span><span class=o>:</span> <span class=mi>40</span><span class=kt>px</span> <span class=o>-</span> <span class=mi>10</span><span class=kt>px</span><span class=p>;</span>
+<span class=na>margin</span><span class=o>:</span> <span class=mi>40</span><span class=kt>px</span> <span class=o>*</span> <span class=mi>10</span><span class=kt>px</span><span class=p>;</span>
+<span class=na>margin</span><span class=o>:</span> <span class=p>(</span><span class=mi>40</span><span class=kt>px</span> <span class=o>/</span> <span class=mi>10</span><span class=kt>px</span><span class=p>);</span>
+
+<span class=c1>// .sass</span>
+<span class=na>margin</span><span class=o>:</span> <span class=mi>40</span><span class=kt>px</span> <span class=o>+</span> <span class=mi>10</span><span class=kt>px</span>
+<span class=no>margin</span><span class=o>:</span> <span class=mi>40</span><span class=kt>px</span> <span class=o>-</span> <span class=mi>10</span><span class=kt>px</span>
+<span class=no>margin</span><span class=o>:</span> <span class=mi>40</span><span class=kt>px</span> <span class=o>*</span> <span class=mi>10</span><span class=kt>px</span>
+<span class=no>margin</span><span class=o>:</span> <span class=p>(</span><span class=mi>40</span><span class=kt>px</span> <span class=o>-</span> <span class=mi>10</span><span class=kt>px</span><span class=p>)</span>
+</code></pre></div><p>Ainda na parte de cálculos, por padrão o Sass possui algumas funções que você pode usar:</p><div class=highlight><pre><code class=scss><span class=c1>// .scss</span>
+<span class=na>width</span><span class=o>:</span> <span class=nf>percentage</span><span class=p>(</span><span class=mi>2</span><span class=mf>.5</span><span class=p>);</span> <span class=c1>// retorna =&gt; width: 250%;</span>
+<span class=na>width</span><span class=o>:</span> <span class=nf>round</span><span class=p>(</span><span class=mi>10</span><span class=mf>.6</span><span class=kt>px</span><span class=p>);</span> <span class=c1>// retorna =&gt; width: 10px;</span>
+<span class=na>width</span><span class=o>:</span> <span class=nf>ceil</span><span class=p>(</span><span class=mi>10</span><span class=mf>.6</span><span class=kt>px</span><span class=p>);</span> <span class=c1>// retorna =&gt; width: 11px;</span>
+<span class=na>width</span><span class=o>:</span> <span class=nf>floor</span><span class=p>(</span><span class=mi>2</span><span class=mf>.5</span><span class=kt>px</span><span class=p>);</span> <span class=c1>// retorna =&gt; width: 2px;</span>
+<span class=na>width</span><span class=o>:</span> <span class=nf>abs</span><span class=p>(</span><span class=mi>-2</span><span class=mf>.5</span><span class=kt>px</span><span class=p>);</span> <span class=c1>// retorna =&gt; width: 2.5px;</span>
+
+<span class=c1>// .sass</span>
+<span class=na>width</span><span class=o>:</span> <span class=nf>percentage</span><span class=p>(</span><span class=mi>2</span><span class=mf>.5</span><span class=p>)</span>
+<span class=c1>// etc...</span>
+</code></pre></div><p>Existem muitas outras operações envolvendo números e até mesmo cores!</p><p>Falando um pouco do reuso, podemos fazer algo assim:</p><div class=highlight><pre><code class=scss><span class=c1>// .scss</span>
+<span class=nc>.btn</span> <span class=p>{</span>
+  <span class=na>width</span><span class=o>:</span> <span class=mi>140</span><span class=kt>px</span>
+  <span class=no>padding</span><span class=o>:</span> <span class=mi>10</span><span class=kt>px</span><span class=p>;</span>
+<span class=p>}</span>
+<span class=nc>.btn-success</span> <span class=p>{</span>
+  <span class=k>@extend</span> <span class=nc>.btn</span><span class=o>;</span>
+  <span class=nt>background</span><span class=nd>:</span> <span class=nt>green</span><span class=o>;</span>
+<span class=p>}</span>
+
+<span class=c1>// Resultado:</span>
+<span class=nc>.btn</span><span class=o>,</span>
+<span class=nc>.btn-success</span> <span class=p>{</span>
+  <span class=na>width</span><span class=o>:</span> <span class=mi>140</span><span class=kt>px</span>
+  <span class=no>padding</span><span class=o>:</span> <span class=mi>10</span><span class=kt>px</span><span class=p>;</span>
+<span class=p>}</span>
+<span class=nc>.btn-success</span> <span class=p>{</span>
+  <span class=na>background</span><span class=o>:</span> <span class=nb>green</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></div><p>Mixins são funções que você escreve, vejamos um exemplo:</p><div class=highlight><pre><code class=scss><span class=c1>// .scss</span>
+<span class=k>@mixin</span><span class=nf> box</span><span class=p>(</span><span class=nv>$bg-color</span><span class=o>,</span> <span class=nv>$color</span><span class=p>)</span> <span class=p>{</span>
+  <span class=na>background</span><span class=o>:</span> <span class=nv>$bg-color</span><span class=p>;</span>
+  <span class=na>color</span><span class=o>:</span> <span class=nv>$color</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=c1>// Usando...</span>
+<span class=c1>// .scss</span>
+<span class=nc>.big-box</span> <span class=p>{</span>
+  <span class=k>@include</span><span class=nd> box</span><span class=p>(</span><span class=nb>black</span><span class=o>,</span> <span class=nb>white</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=c1>// .sass</span>
+<span class=c1>// Repare que usando .sass, a figura muda um pouco, usamos o sinal de + ao invés da palavra @include</span>
+<span class=nc>.big-box</span>
+  <span class=o>+</span><span class=nt>box</span><span class=o>(</span><span class=nt>black</span><span class=o>,</span> <span class=nt>white</span><span class=o>)</span>
+</code></pre></div><p>Posso até mesmo usar while, for, if, etc</p><div class=highlight><pre><code class=scss><span class=c1>// .scss</span>
+<span class=nv>$i</span><span class=o>:</span> <span class=mi>1</span><span class=p>;</span>
+
+<span class=k>@while</span> <span class=nv>$i</span> <span class=o>&lt;=</span> <span class=mi>6</span> <span class=p>{</span>
+  <span class=nt>h</span><span class=nn>#</span><span class=p>{</span><span class=err>$</span><span class=nt>i</span><span class=p>}</span> <span class=p>{</span>
+    <span class=na>font-size</span><span class=o>:</span> <span class=mi>50</span><span class=kt>px</span> <span class=o>-</span> <span class=p>(</span><span class=nv>$i</span><span class=o>*</span> <span class=mi>5</span><span class=kt>px</span><span class=p>);</span>
+  <span class=p>}</span>
+  <span class=nv>$i</span><span class=o>:</span> <span class=nv>$i</span> <span class=o>+</span> <span class=mi>1</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=c1>// Resultado:</span>
+<span class=nt>h1</span> <span class=p>{</span>
+  <span class=na>font-size</span><span class=o>:</span> <span class=mi>45</span><span class=kt>px</span><span class=p>;</span>
+<span class=p>}</span>
+<span class=nt>h2</span> <span class=p>{</span>
+  <span class=na>font-size</span><span class=o>:</span> <span class=mi>40</span><span class=kt>px</span><span class=p>;</span>
+<span class=p>}</span>
+<span class=nt>h3</span> <span class=p>{</span>
+  <span class=na>font-size</span><span class=o>:</span> <span class=mi>35</span><span class=kt>px</span><span class=p>;</span>
+<span class=p>}</span>
+<span class=nt>h4</span> <span class=p>{</span>
+  <span class=na>font-size</span><span class=o>:</span> <span class=mi>30</span><span class=kt>px</span><span class=p>;</span>
+<span class=p>}</span>
+<span class=nt>h5</span> <span class=p>{</span>
+  <span class=na>font-size</span><span class=o>:</span> <span class=mi>25</span><span class=kt>px</span><span class=p>;</span>
+<span class=p>}</span>
+<span class=nt>h6</span> <span class=p>{</span>
+  <span class=na>font-size</span><span class=o>:</span> <span class=mi>20</span><span class=kt>px</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></div><p>Bem legal!</p><p>Hoje outro termo que sempre se ouve por aí é modularização, quebrar o seu código em vários pedaços para facilitar a manutenção e organização.</p><p>Com o Sass (ou melhor, os pré-processadores css), podemos usar esse conceito de módulos sem nos preocupar com "quanto + módulos, + requisições".</p><p>Digamos que eu tenha 3 arquivos css separados, e chamo eles separadamente no head da minha página, com o Sass, podemos usar o @import:</p><blockquote><p>Posso criar um arquivo style.scss e nele incluir meus imports</p></blockquote><div class=highlight><pre><code class=scss><span class=c1>// .scss</span>
+<span class=k>@import</span> <span class=s1>&#39;</span><span class=s2>normalize&#39;</span><span class=p>;</span>
+<span class=k>@import</span> <span class=s1>&#39;</span><span class=s2>base&#39;</span><span class=p>;</span>
+<span class=k>@import</span> <span class=s1>&#39;</span><span class=s2>layout&#39;</span><span class=p>;</span>
+</code></pre></div><p>O resultado é 1 arquivo apenas, com o conteúdo dos 3 arquivos, e apenas uma requisição :)</p><p>É isso, espero ter cobrido o básico do básico sobre pré-processadores, neste caso o Sass.</p><p>Não deixe de ler a documentação oficial, entre outros links abaixo:</p><ul><li><a href=http://sass-lang.com/documentation/file.SASS_REFERENCE.html target=blank>Documentação Sass</a></li><li><a href=http://thesassway.com/ target=_blank>The Sass Way</a></li><li><a href=http://compass-style.org/ target=_blank>Compass</a></li><li><a href=http://bourbon.io/ target=_blank>Bourbon</a></li><li><a href=http://neat.bourbon.io/ target=_blank>Bourbon Neat</a></li><li><a href=http://hugogiraudel.com/ target=_blank>Hugo Giraudel</a></li><li><a href=http://css-tricks.com/sass-style-guide/ target=_blank>Sass Style Guide by Chris Coyier</a></li></ul><p>Até a próxima!</p></div><!-- <section class="share-this">
     <h4>Share this!</h4>
     <ul class="social-button-list">
       <li class="twitter-button">
