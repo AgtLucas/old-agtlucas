@@ -34,6 +34,7 @@
     $('.main').fitVids();
   };
 
+
   // // Insert Twitter Button
   // function insertTweet(target) {
   //   $(target).append('<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ post.url }}" data-via="_agtlucas" data-lang="en">Tweet</a>' +
