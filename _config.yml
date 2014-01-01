@@ -4,6 +4,7 @@
 # 3. config.yml
 
 name: agtlucas
+url: http://agtlucas.com
 domain: agtlucas.com
 description: Front-End Ops
 author:
