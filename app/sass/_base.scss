@@ -33,6 +33,15 @@ $grid-padding   : $gutter-width;  // grid-padding equal to gutters
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: $aablack;
+  color: $white;
+}
+::selection {
+  background: $aablack;
+  color: $white;
+}
+
 body {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -41,6 +50,9 @@ body {
   font-size: rem(16);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: $white;
+  color: $ablack;
+
 }
 
 header,
@@ -53,6 +65,7 @@ footer {
   padding: 5px;
   bottom: 0;
   width: 100%;
+  background: rgba(255,255,255,0.9);
   color: $agrey;
   small {
     text-align: center;
@@ -70,6 +83,9 @@ img {
 a {
   color: $ablue;
   text-decoration: none;
+  &:hover {
+    color: $ablack;
+  }
   @include transition(all 0.3s ease-in-out);
 }
 
@@ -80,6 +96,7 @@ blockquote {
   font-size: 20px;
   font-size: rem(20);
   text-align: left;
+  color: $grey;
 }
 
 .dark {
@@ -118,35 +135,5 @@ blockquote {
   .prev-next-posts,
   .share-this {
     border-top: 1px solid $black;
-  }
-}
-
-.peaceful {
-  ::-moz-selection {
-    background: $aablack;
-    color: $white;
-  }
-  ::selection {
-    background: $aablack;
-    color: $white;
-  }
-  background: $white;
-  color: $ablack;
-  a {
-    &:hover {
-      color: $ablack;
-    }
-  }
-  blockquote {
-    color: $grey;
-  }
-  .post-title-link {
-    color: $ablack;
-    &:hover {
-      color: $ablue;
-    }
-  }
-  .main-footer {
-    background: rgba(255,255,255,0.9);
   }
 }

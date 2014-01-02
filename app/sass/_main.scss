@@ -71,6 +71,10 @@
 
 .post-title-link {
   font-size: rem(22);
+  color: $grey;
+  &:hover {
+    color: $ablue;
+  }
   @media all and (max-width: 33.4375em) {
     padding-right: 20px;
   }
