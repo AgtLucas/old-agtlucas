@@ -11,7 +11,7 @@ I'm of those people that enjoy to test and discover new apps, and because of tha
 
 <img src="/img/apps.png" alt="My Apps on Dock">
 
-Follow the image above, after Finder and App Store (the two first of the left):
+Following the image above, after Finder and App Store (the two first of the left):
 
 **<a href="https://agilebits.com/onepassword" target="_blank">1Password</a>**: Ok, 1Password this is a little bit expensive, but worth. The best way you can organize all of your 21315812312 of passwords.
 
