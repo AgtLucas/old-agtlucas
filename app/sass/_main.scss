@@ -101,32 +101,36 @@
 .prev-next-posts {
   margin-top: 40px;
   width: 100%;
-  border-top: 1px solid $awhite;
+  background: $aablack;
   ul {
     list-style: none;
     padding: 0;
     font-size: 0;
     li {
-      padding: 20px;
       display: inline-block;
       width: 324px;
       max-width: 100%;
       font-size: 20px;
       vertical-align: top;
-    }
-    li:nth-child(odd) {
-      padding-left: 0;
-    }
-    li:nth-child(even) {
-      padding-right: 0;
-      @media all and (max-width: 43.375em) {
-        padding-left: 0;
+      &:hover {
+        background: $bluegrey;
       }
     }
   }
   h4 {
     color: $agrey;
     margin: 0;
+  }
+}
+
+.pn-link {
+  padding: 20px;
+  color: $awhite;
+  width: 100%;
+  height: 100%;
+  display: block;
+  &:hover {
+    color: $awhite;
   }
 }
 

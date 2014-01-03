@@ -35,10 +35,10 @@ skin: peaceful
   <section class="prev-next-posts">
     <ul>
       {% if page.next.url %}
-      <li class="next-post"><a href="{{ page.next.url }}" data-pjax=".main"><h4>Next Post</h4><span>{{ page.next.title }}</span></a></li>
+      <li class="next-post"><a href="{{ page.next.url }}" class="pn-link" data-pjax=".main"><h4>Next Post</h4><span>{{ page.next.title }}</span></a></li>
       {% endif %}
       {% if page.previous.url %}
-      <li class="prev-post"><a href="{{ page.previous.url }}" data-pjax=".main"><h4>Previous Post</h4><span>{{ page.previous.title }}</span></a></li>
+      <li class="prev-post"><a href="{{ page.previous.url }}" class="pn-link" data-pjax=".main"><h4>Previous Post</h4><span>{{ page.previous.title }}</span></a></li>
       {% endif %}
     </ul>
   </section>
