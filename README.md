@@ -2,7 +2,7 @@
 
 ### The source code of my site
 
-Powered by Jekyll.
+Powered by [Jekyll + Yeoman](https://github.com/robwierzbowski/generator-jekyllrb).
 
 ### License
 
