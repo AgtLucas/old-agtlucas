@@ -8,7 +8,7 @@ Powered by [Jekyll + Yeoman](https://github.com/robwierzbowski/generator-jekyllr
 
 The MIT License (MIT)
 
-Copyright (c) [2014] [Lucas da Silva]
+Copyright (c) 2014 Lucas da Silva
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
