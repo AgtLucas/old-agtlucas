@@ -2,6 +2,8 @@
 
 ### The source code of my site
 
+Powered by Jekyll.
+
 ### License
 
 The MIT License (MIT)
