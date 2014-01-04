@@ -4,7 +4,7 @@ class: blog-post
 skin: peaceful
 ---
 
-<div class="content post-content">
+<article class="content post-content" role="article">
   <h2 class="post-title">{{ page.title }}</h2>
   <small class="meta">{{ page.date | date_to_string }}</small>
 
@@ -48,4 +48,4 @@ skin: peaceful
       {% include disqus.html %}
     </div>
   </section>
-</div>
+</article>
