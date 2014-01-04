@@ -2,7 +2,10 @@
 
 ### The source code of my site
 
-Powered by [Jekyll + Yeoman](https://github.com/robwierzbowski/generator-jekyllrb).
+Powered by:
+
+* [Jekyll + Yeoman](https://github.com/robwierzbowski/generator-jekyllrb).
+* [Compass](http://compass-style.org/)
 
 ### License
 
