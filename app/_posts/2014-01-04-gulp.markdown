@@ -1,0 +1,86 @@
+---
+layout: post
+title: "Gulp - First impressions"
+date: 2014-01-04 05:40:00
+categories: blog
+---
+
+In the last week of 2013, on my Twitter feed (or it was on Google Plus? Doesn't matter), I saw a link about something called Gulp. I opened up <a href="http://travismaynard.com/writing/no-need-to-grunt-take-a-gulp-of-fresh-air" target="_blank">that link</a>, scrolled the page like a ninja and didn't understand anything, of course, because I didn't read the article...
+
+Gulp is a Javascript task runner/streaming build system created by <a href="http://wearefractal.com" target="_blank">Fractal</a>. Gulp uses the concept about <a href="https://github.com/substack/stream-handbook" target="_blank">Streams</a>.
+
+So, Today I've started to play with <a href="http://gulpjs.com" target="_blank">Gulp</a> and I wanna share with you my first impressions.
+
+> If you'd like to learn how to get start, I highly recomend the <a href="https://github.com/gulpjs/gulp/blob/master/README.md#gulp---" target="_blank">documentation</a> and <a href="http://travismaynard.com/writing/getting-started-with-gulp" target="_blank">this article</a>.
+
+<img src="/img/gulp.jpg" alt="Gulp">
+
+## What I liked:
+
+**Simplicity**:
+Gulp is code over configuration, you don't need to care much about how to configure your environment, in fact, you basically need to know 5 functions:
+
+{% highlight javascript %}
+
+// Return a readable stream
+gulp.src(glob)
+
+// Return a writable stream
+gulp.dest(folder)
+
+// Register a task
+gulp.task(name, fn)
+
+// Execute tasks
+gulp.run(tasks)
+
+// Watch file changes
+gulp.watch(glob, fn)
+
+{% endhighlight %}
+
+Bellow an example of a real `gulpfile.js`:
+
+{% highlight javascript %}
+
+// Include gulp
+var gulp = require('gulp');
+
+// Plugins
+var compass = require('gulp-compass');
+
+// Tasks
+
+// Compass
+gulp.task('compass', function() {
+  gulp.src('./assets/scss/*.scss')
+      .pipe(compass({
+        config_file: './config.rb'
+      }))
+      .pipe(gulp.dest('./assets/css'));
+});
+
+// Default Task
+gulp.task('default', function() {
+  gulp.run('compass');
+
+  // Watch the files
+  gulp.watch('./assets/scss/**/*.scss', function() {
+    gulp.run('compass');
+  });
+});
+
+{% endhighlight %}
+
+Pretty simple, I really liked it.
+
+## What I dislike
+
+**Concurrency model**:
+As far as I understood, every task runs in parallel, in other words, you can't have a task that execute other tasks in order. Maybe I'm wrong, at least I didn't figured out how can I do this.
+
+## Final Words
+
+To finish up, I think Gulp is a great tool, already have more than <a href="http://gratimax.github.io/search-gulp-plugins/" target="_blank">100 plugins</a> and this number will surely grows. For now, I'll still using <a href="http://gruntjs.com/" target="_blank">Grunt</a> as my task runner of choice, but, I'll keep my eyes open on Gulp, because is very good to know that you have other choices!
+
+That's all folks!
