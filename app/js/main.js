@@ -38,7 +38,7 @@
 })(jQuery);
 
 // Async Share Buttons
-(function(doc, script) {
+var asyncButtons = (function(doc, script) {
   var js,
       fjs = doc.getElementsByTagName(script)[0],
       frag = doc.createDocumentFragment(),
