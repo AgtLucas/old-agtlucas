@@ -108,7 +108,13 @@
     font-size: 0;
     li {
       display: inline-block;
-      width: 324px;
+      @media all and (max-width: 80em) and (min-width: 43.4375em) {
+        width: 324px;
+      }
+      @media all and (max-width: 50em) {
+        width: 100%;
+      }
+      width: 456px;
       max-width: 100%;
       font-size: 20px;
       vertical-align: top;
