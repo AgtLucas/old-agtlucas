@@ -1,6 +1,6 @@
 {
   "name": "agtlucas",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yeoman workflow for agtlucas",
   "dependencies": {},
   "devDependencies": {
