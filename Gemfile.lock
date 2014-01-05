@@ -37,6 +37,7 @@ GEM
       rb-kqueue (>= 0.2)
     maruku (0.6.1)
       syntax (>= 1.0.0)
+    newrelic_rpm (3.7.1.182)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.8)
@@ -65,5 +66,6 @@ DEPENDENCIES
   compass (>= 0.12)
   csscss (~> 1.3)
   jekyll (~> 1.3.0)
+  newrelic_rpm
   rdiscount
   susy
