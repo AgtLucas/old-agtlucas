@@ -7,10 +7,25 @@ categories: blog
 
 I love computers. And Hardware computers.
 
-A few year ago, I was a Windows user/PC Gamer/Almost Overclocker. I used to use a i5 @4,0GHz. Crazy stuff.
+A few year ago, I was a Windows user/PC Gamer/Almost Overclocker. I used to use a <a href="http://ark.intel.com/products/42915/Intel-Core-i5-750-Processor-8M-Cache-2_66-GHz" target="_blank">i5-750 @2.66GHz</a> overclocked to 4.0GHz. Crazy stuff.
 
 But since I joined to Apple side of the force, I've learned that Hardware isn't everything, you need good softwares too. I'm not saying that Windows is bad, in fact, I really like Windows 8, is lightweight and run smooth.
 
 I'm not a Windows user/PC Gamer/Almost Overclocker anymore. I'm trying to go back to this side, only for fun, but it's not a easy way, and doesn't matter now.
 
 ### My Setup
+
+<img src="/img/mac.jpg" alt="MacBook Pro">
+
+Now, I own:
+
+* MacBook Pro 13-inch 2011 - <a href="http://valid.canardpc.com/cache/screenshot/dx209e.png" target="_blank">i5-2435M @2.40GHz</a>, 8GB DDR3 1330MHz, 500GB (planning a upgrade to SSD)
+* Samsung 2233RZ for external monitor
+* Razer Abyssus, good mouse but I still prefer a Corsair M60
+* Razer Kabuto
+* Nexus 4 - 4.4.2
+* Microsoft LifeChat LX-3000 (planning a upgrade)
+
+That's my setup.
+
+:)
