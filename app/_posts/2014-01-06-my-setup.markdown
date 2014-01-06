@@ -1,0 +1,16 @@
+---
+layout: post
+title: "My Setup"
+date: 2014-01-06 09:10:00
+categories: blog
+---
+
+I love computers. And Hardware computers.
+
+A few year ago, I was a Windows user/PC Gamer/Almost Overclocker. I used to use a i5 @4,0GHz. Crazy stuff.
+
+But since I joined to Apple side of the force, I've learned that Hardware isn't everything, you need good softwares too. I'm not saying that Windows is bad, in fact, I really like Windows 8, is lightweight and run smooth.
+
+I'm not a Windows user/PC Gamer/Almost Overclocker anymore. I'm trying to go back to this side, only for fun, but it's not a easy way, and doesn't matter now.
+
+### My Setup
