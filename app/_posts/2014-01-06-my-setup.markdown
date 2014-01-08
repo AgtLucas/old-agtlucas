@@ -7,7 +7,7 @@ categories: blog
 
 I love computers. And Hardware computers.
 
-A few year ago, I was a Windows user/PC Gamer/Almost Overclocker. I used to use a <a href="http://ark.intel.com/products/42915/Intel-Core-i5-750-Processor-8M-Cache-2_66-GHz" target="_blank">i5-750 @2.66GHz</a> overclocked to 4.0GHz. Crazy stuff.
+A few years ago, I was a Windows user/PC Gamer/Almost Overclocker. I used to use a <a href="http://ark.intel.com/products/42915/Intel-Core-i5-750-Processor-8M-Cache-2_66-GHz" target="_blank">i5-750 @2.66GHz</a> overclocked to 4.0GHz. Crazy stuff.
 
 But since I joined to Apple side of the force, I've learned that Hardware isn't everything, you need good softwares too. I'm not saying that Windows is bad, in fact, I really like Windows 8, is lightweight and run smooth.
 
