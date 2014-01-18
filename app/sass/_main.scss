@@ -16,6 +16,9 @@
     a {
       text-transform: uppercase;
       color: $agrey;
+      &:hover {
+        color: $black;
+      }
     }
   }
 }
