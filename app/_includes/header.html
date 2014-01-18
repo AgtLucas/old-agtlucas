@@ -3,7 +3,7 @@
     <ul class="header-links">
       <li><h3 class="logo"><a href="/" data-pjax=".main">Lucas</a></h3></li>
       {% assign pages = site.pages | sort:"url" %}
-      {% for p in pages %}{% if p.nav == true %}<li><a href="/{{ p.class }}" data-pjax=".main">{{ p.title }}</a></li>
+      {% for p in pages %}{% if p.nav == true %}<li><a href="/{{ p.class }}" {% if p.url == page.url %}class="active"{% endif %} data-pjax=".main">{{ p.title }}</a></li>
       {% endif %}{% endfor %}
     </ul>
   </nav>

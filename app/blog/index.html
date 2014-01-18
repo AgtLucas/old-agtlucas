@@ -7,6 +7,7 @@ nav: true
 ---
 
 <div class="content main-blog-content">
+  <h1>Blog</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span><a class="post-title-link" href="{{ post.url }}" data-pjax=".main">{{ post.title }}</a></li>
