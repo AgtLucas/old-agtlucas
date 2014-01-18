@@ -140,4 +140,7 @@ blockquote {
     background: $awhite;
     color: $aablack;
   }
+  .active {
+    color: $ablue !important;
+  }
 }
