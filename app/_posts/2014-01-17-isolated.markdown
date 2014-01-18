@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Isolated..."
-date: 2014-01-16 20:40:00
+date: 2014-01-17 20:40:00
 categories: blog
 ---
 
