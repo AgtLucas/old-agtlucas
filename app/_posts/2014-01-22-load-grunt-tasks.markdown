@@ -24,7 +24,6 @@ module.exports = function(grunt) {
       // foo...
     },
 
-    // TODO: Make RequireJS work properly
     // RequireJS
     requirejs: {
       // foo...
@@ -54,3 +53,52 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['connect', 'watch']);
 }
 {% endhighlight %}
+
+No problem, right? Yeah, but take a look in how many `grunt.loadNpmTasks` we have, for each plugin that we're using, we need to enable them in our Gruntfile. This can be really painful when we're using a lot of plugins.
+
+To solve "this problem", we can use a plugin (oh rly?) to load all our plugins in our Gruntfile, this plugin by <a href="https://github.com/sindresorhus" target="_blank">Sindre Sorhus</a> is called <a href="https://github.com/sindresorhus/load-grunt-tasks" target="_blank">load-grunt-tasks</a>.
+
+Our Gruntfile using load-grunt-tasks plugin:
+
+{% highlight javascript %}
+'use strict';
+
+module.exports = function(grunt) {
+
+  // Load tasks
+  require('load-grunt-tasks')(grunt);
+
+  // Project configuration
+  grunt.initConfig({
+
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Compass
+    compass: {
+      // foo...
+    },
+
+    // RequireJS
+    requirejs: {
+      // foo...
+    },
+
+    // Connect
+    connect: {
+      options: {
+        // foo...
+      }
+    },
+
+    // Watch
+    watch: {
+      // configuration...
+    }
+
+  });
+
+  grunt.registerTask('default', ['connect', 'watch']);
+}
+{% endhighlight %}
+
+Much better, right?
