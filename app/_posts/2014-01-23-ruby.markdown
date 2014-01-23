@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Ruby"
+date: 2014-01-23 20:10:00
+categories: blog
+---
+
+Today a friend of mine have asked me, "Why schools don't use Ruby to teaching programming?"
