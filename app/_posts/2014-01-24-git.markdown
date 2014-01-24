@@ -5,3 +5,4 @@ date: 2014-01-24 20:25:00
 categories: blog
 ---
 
+If I had to indicate one resource to somebody interesting in learn Git, without doubt this resource would be the <a href="http://git-scm.com/book" target="_blank">Pro Git eBook</a>!
