@@ -3,6 +3,7 @@ layout: post
 title: "Video - GZIP is not enough"
 date: 2014-01-07 04:45:00
 categories: blog
+description: Colt McAnlis talk about GZIP
 ---
 
 In this presentation, <a href="https://twitter.com/duhroach" target="_blank">Colt McAnlis</a> talks about GZIP.

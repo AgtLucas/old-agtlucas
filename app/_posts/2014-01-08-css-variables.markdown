@@ -3,6 +3,7 @@ layout: post
 title: "CSS Variables"
 data: 2014-01-08 08:50:00
 categories: blog
+description: An introduce to CSS Variables
 ---
 
 The CSS variables is a experimental technology, still a <a href="http://dev.w3.org/csswg/css-variables/" target="_blank">editor's draft on W3C</a>.
