@@ -3,6 +3,7 @@ layout: post
 title: "Using Flexbox - Part II - or not"
 date: 2014-01-13 03:00:00
 categories: blog
+description: Resources to learn Flexbox
 ---
 
 So, today I would like to write a little bit more about Flexbox, but I can't. I'm not going to go into details but I have some changes to do!
