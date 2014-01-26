@@ -3,6 +3,7 @@ layout: post
 title: "Flexbox"
 date: 2014-01-11 20:30:00
 categories: blog
+description: Flexible Box Layout Model
 ---
 
 Today I was thinking about CSS box model.
