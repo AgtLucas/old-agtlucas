@@ -3,6 +3,7 @@ layout: post
 title:  "Apps that I use"
 date:   2014-01-02 04:39:00
 categories: blog
+description: Apps that I use
 ---
 
 Whichever is your development platform of choice, I'm sure you've a lot of apps that you cannot live without.
