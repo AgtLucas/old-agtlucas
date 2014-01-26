@@ -3,6 +3,7 @@ layout: post
 title: "My Sublime Text 2 Environment"
 date: 2014-01-10 19:30:00
 categories: blog
+description: Tips for Sublime Text 2 Environment
 ---
 
 Hello,
