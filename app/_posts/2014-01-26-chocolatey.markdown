@@ -3,6 +3,7 @@ layout: post
 title: "Chocolatey"
 date: 2014-01-26 10:00:00
 categories: blog
+description: Chocolatey, a must have package manager for Windows
 ---
 
 If you're a Windows user, and always missed a good package manage like <a href="http://brew.sh/" target="_blank">Homebrew for Mac</a>, or built-in options in Linux, well, you must install <a href="http://chocolatey.org/" target="_blank">Chocolatey</a>, a must have package manager for Windows!
