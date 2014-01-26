@@ -3,6 +3,7 @@ layout: post
 title: "My Favorites Sass Frameworks and Libs"
 date: 2014-01-19 07:40:00
 categories: blog
+description: A small list of Sass Frameworks
 ---
 
 Hello everyone,
