@@ -3,6 +3,7 @@ layout: post
 title: "Moving to Ghost"
 date: 2014-01-15 15:22:00
 categories: blog
+description: From Ruby to Node.js, moving to Ghost!
 ---
 
 I'd been planning this for a while, I guess since the <a href="http://ghost.org" target="_blank">Ghost</a> launch and now I'm sure, I'll move this entire blog to Ghost Platform.
