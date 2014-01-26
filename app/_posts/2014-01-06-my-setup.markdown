@@ -3,6 +3,7 @@ layout: post
 title: "My Setup"
 date: 2014-01-06 09:10:00
 categories: blog
+description: My tools, my setup!
 ---
 
 I love computers. And Hardware computers.
