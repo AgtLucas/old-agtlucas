@@ -3,6 +3,7 @@ layout: post
 title: "WebKit Web Replay Support"
 date: 2014-01-18 02:50:00
 categories: blog
+categories: WebKit Replay Support video
 ---
 
 Later this week, <a href="https://twitter.com/brrian" target="_blank">Brian Burg</a> announced through <a href="https://lists.webkit.org/mailman/listinfo/webkit-dev" target="_blank">webkit-dev list</a>, web replay support on WebKit:
