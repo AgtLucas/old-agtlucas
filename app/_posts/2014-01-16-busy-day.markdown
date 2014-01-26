@@ -3,6 +3,7 @@ layout: post
 title: "Busy Day"
 date: 2014-01-16 20:33:00
 categories: blog
+description: Really busy!
 ---
 
 Status: Working in four different projects (not at my job).
