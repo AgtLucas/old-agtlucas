@@ -3,6 +3,7 @@ layout: post
 title: "Beyond"
 date: 2014-01-09 21:20:00
 categories: blog
+description: Beyond and beyond
 ---
 
 And if you could go *beyond* everything you done?
