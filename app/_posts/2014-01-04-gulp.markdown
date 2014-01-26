@@ -3,6 +3,7 @@ layout: post
 title: "Gulp - First impressions"
 date: 2014-01-04 05:40:00
 categories: blog
+description: Trying Gulp
 ---
 
 In the last week of 2013, on my Twitter feed (or it was on Google Plus? Doesn't matter), I saw a link about something called Gulp. I opened up <a href="http://travismaynard.com/writing/no-need-to-grunt-take-a-gulp-of-fresh-air" target="_blank">that link</a>, scrolled the page like a ninja and didn't understand anything, of course, because I didn't read the article...
