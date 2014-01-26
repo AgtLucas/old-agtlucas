@@ -3,6 +3,7 @@ layout: post
 title: "What's going on?"
 date: 2014-01-21 20:20:00
 categories: blog
+description: What's going on, Lucas?
 ---
 
 Hello everyone,
