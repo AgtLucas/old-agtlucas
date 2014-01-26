@@ -3,6 +3,7 @@ layout: post
 title: "Using Flexbox - Part I"
 date: 2014-01-12 20:38:00
 categories: blog
+description: Using Flexbox
 ---
 
 Yesterday <a href="http://agtlucas.com/blog/2014/01/11/flexbox.html" target="_blank">I talked a little about CSS Flexible Box Layout Model</a>, and today I'll show you how to use Flexbox (I'll try).
