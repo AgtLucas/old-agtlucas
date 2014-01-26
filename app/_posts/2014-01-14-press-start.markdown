@@ -3,6 +3,7 @@ layout: post
 title: "Press Start"
 date: 2014-01-14 20:52:00
 categories: blog
+description: Starting all over again
 ---
 
 Today I returned to work after my break for the holidays...
