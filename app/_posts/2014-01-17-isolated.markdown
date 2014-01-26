@@ -3,6 +3,7 @@ layout: post
 title: "Isolated..."
 date: 2014-01-17 20:40:00
 categories: blog
+description: Isolated
 ---
 
 Short post today, because I am isolated, without internet connection and my mobile network is so slow to do a longer post...
