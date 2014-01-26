@@ -3,6 +3,7 @@ layout: post
 title:  "A Brave New World!"
 date:   2014-01-01 01:11:00
 categories: blog
+description: 2014 - A brave new world!
 ---
 
 So, a new year has began, and with that I decide to put my new site on air.
