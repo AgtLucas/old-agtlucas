@@ -3,6 +3,7 @@ layout: post
 title: "Other apps that I use"
 data: 2014-01-03 05:12:00
 categories: blog
+description: Apps that I use - Part 2
 ---
 
 Hello everybody,
