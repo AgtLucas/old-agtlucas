@@ -3,7 +3,7 @@ layout: post
 title: "Someday..."
 date: 2014-01-20 21:46:00
 categories: blog
-categories: Someday...
+description: Someday...
 ---
 
 ### Status:
