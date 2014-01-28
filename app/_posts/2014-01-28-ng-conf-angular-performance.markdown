@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[ng-conf] - Angular Performance"
-date: 2014-01-27 20:15:00
+date: 2014-01-28 12:45:00
 categories: blog
 description: Angular Performance at ng-conf!
 ---
