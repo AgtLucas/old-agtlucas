@@ -6,6 +6,7 @@
     "jquery": "~2.0.3",
     "jquery-pjax": "~1.7.3",
     "nprogress": "~0.1.2",
-    "fitvids": "~1.0.3"
+    "fitvids": "~1.0.3",
+    "fluidvids": "*"
   }
 }
