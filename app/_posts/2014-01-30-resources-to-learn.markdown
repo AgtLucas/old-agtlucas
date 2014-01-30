@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Resources to learn"
-date: 2014-01-30 22:15:00
+date: 2014-01-30 20:12:00
 categories: blog
 description: Great resources to learn code and other stuff
 ---
