@@ -16,4 +16,4 @@ Here's a small list of great resources to learn code and other tech stuff:
 * <a href="http://www.codecademy.com/" target="_blank">Codecademy</a>
 * <a href="https://www.edx.org/" target="_blank">edX</a>
 
-Of course there are many, many other options, but those listed above are pretty cool!
+Of course there are many, many other options, but these above listed are pretty cool!
