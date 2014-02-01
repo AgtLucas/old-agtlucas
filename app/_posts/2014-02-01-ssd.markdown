@@ -1,0 +1,7 @@
+---
+layout: post
+title: "SSD... Finally!"
+date: 2014-02-01 01:15:00
+categories: blog
+description: Finally I switched from a HDD to a SSD!
+---
