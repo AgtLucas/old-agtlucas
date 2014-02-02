@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Dreams"
+date: 2014-02-02 05:35:00
+categories: blog
+description: Never give up!
+---
+
+>Success consists of going from failure to failure without loss of enthusiasm.
+- *Winston Churchill*
+
+If you have a dream, no matter how many times you fail, you must keep going until achieve your dream.
