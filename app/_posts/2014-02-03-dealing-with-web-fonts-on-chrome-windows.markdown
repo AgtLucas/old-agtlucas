@@ -3,7 +3,7 @@ layout: post
 title: "Dealing with Web Fonts on Chrome Windows version"
 date: 2014-02-03 07:55:00
 categories: blog
-description: Never give up!
+description: How to deal of bad render of web fonts on Chrome Windows version
 ---
 
 One of the most notable difference in web fonts is when you open your site with that beautiful font on Chrome Windows version. Is really, really ugly and bad renderezid, in fact, on Windows 8 it's not too bad!
