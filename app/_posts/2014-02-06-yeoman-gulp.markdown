@@ -8,4 +8,4 @@ description: Finally, Yeoman + Gulp
 
 After the "Gulp boom", finally Yeoman and Gulp together!
 
-Read the entire history <a href="http://127.0.0.1:9000/blog/2014/02/06/yeoman-gulp.html" target="_blank">here</a>.
+Read the entire history <a href="http://yeoman.io/blog/gulp-explore.html">here</a>.
