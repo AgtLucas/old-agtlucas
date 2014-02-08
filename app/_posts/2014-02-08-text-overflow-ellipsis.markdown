@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Truncating string with CSS"
-date: 2014-02-07 09:10:00
+date: 2014-02-08 05:00:00
 categories: blog
 description: Because sometimes CSS > JS
 ---
