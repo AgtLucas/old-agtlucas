@@ -75,6 +75,10 @@
   }
 }
 
+.post {
+  margin-top: 40px;
+}
+
 .post-title-link {
   font-size: rem(16);
   color: $aablack;
@@ -160,6 +164,7 @@
   background: $aablack;
   color: $awhite;
   padding: 4px;
+  display: inline-block;
 }
 
 .comments {
