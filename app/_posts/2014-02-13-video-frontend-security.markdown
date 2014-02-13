@@ -6,3 +6,8 @@ categories: blog
 description: Mike West talk about Security on Frontend
 ---
 
+In this video, Mike West talk about Security on Frontend areas.
+
+Enjoy!
+
+<iframe width="944" height="531" src="//www.youtube.com/embed/fYjO5pIY1mY" frameborder="0" allowfullscreen></iframe>
