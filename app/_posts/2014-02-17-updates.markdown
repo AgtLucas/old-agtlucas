@@ -6,3 +6,7 @@ categories: blog
 description: ...
 ---
 
+### Status:
+
+* Sick;
+* Tired;
