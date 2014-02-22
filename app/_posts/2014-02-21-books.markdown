@@ -18,6 +18,6 @@ This book is awesome! I not finished to read it yet, but it's a monster!
 
 <img src="/img/nodejsrightway.jpg" alt="Node.js the Right Way">
 
-Short book, but with some awesme information about Node.js.
+Short book, but with some awesome information about Node.js.
 
 This is mine, what's your?
