@@ -3,6 +3,21 @@ layout: post
 title: "Books"
 date: 2014-02-21 10:30:00
 categories: blog
-description: My Bookshelf
+description: My daily Bookshelf
 ---
 
+There are 2 books that I'm reading in my day to day.
+
+* JavaScript: The Definitive Guide
+
+<img src="/img/jsguide.jpg" alt="JavaScript: The Definitive Guide">
+
+This book is awesome! I not finished to read it yet, but it's a monster!
+
+* Node.js the Right Way
+
+<img src="/img/nodejsrightway.jpg" alt="Node.js the Right Way">
+
+Short book, but with some awesme information about Node.js.
+
+This is mine, what's your?
