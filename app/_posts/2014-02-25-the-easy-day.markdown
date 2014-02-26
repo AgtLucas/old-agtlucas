@@ -7,3 +7,5 @@ description: ...was yesterday
 ---
 
 >“The only easy day was yesterday”
+
+- United States Navy SEALs motto
