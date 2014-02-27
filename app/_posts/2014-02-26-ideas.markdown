@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Ideas"
+date: 2014-02-26 10:40:00
+categories: blog
+description: Follow your dreams!
+---
+
