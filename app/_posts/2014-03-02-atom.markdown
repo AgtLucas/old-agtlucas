@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Atom"
+date: 2014-03-02 11:50:00
+categories: blog
+description: The GitHub new text editor!
+---
