@@ -5,3 +5,21 @@ date: 2014-03-02 11:50:00
 categories: blog
 description: The GitHub new text editor!
 ---
+
+<img src="/img/atom-logo.png" alt="Atom Logo" />
+
+In the last week, Atom, the new text-editor made by GitHub was announced.
+
+>Atom is a desktop application based on web technologies. Like other desktop apps, it has its own icon in the dock, native menus and dialogs, and full access to the file system.
+
+I had the beta access thanks to a friend, and I've been using Atom since the last 24 hours. Here are my first impressions:
+
+* Very similar to Sublime
+* A lot of plugins
+* Package Control is cool!
+* A little heavier than Sublime Text 3 (beta)
+* Awesome configurations by default
+
+Really liked the Atom so far, just crashed one time.
+
+More information about Atom soon!
