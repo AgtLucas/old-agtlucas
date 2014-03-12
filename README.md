@@ -6,3 +6,5 @@ Powered by:
 
 * [Jekyll + Yeoman](https://github.com/robwierzbowski/generator-jekyllrb).
 * [Compass](http://compass-style.org/)
+
+### Migrating to Ghost
