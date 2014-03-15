@@ -6,8 +6,8 @@ var main = (function () {
   var main = {
 
     init: function () {
-      this.fluidVids();
-      this.showComments();
+      main.fluidVids();
+      main.showComments();
     },
 
     fluidVids: function () {
