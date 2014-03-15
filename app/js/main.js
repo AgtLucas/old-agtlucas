@@ -1,29 +1,45 @@
-(function(window, document, undefined) {
+// TODO: Comment the code
+var main = (function () {
+
   'use strict';
 
-  Fluidvids.init({
-    selector: 'iframe',
-    players: ['www.youtube.com', 'player.vimeo.com']
-  });
+  var main = {
 
-  var showComments = document.getElementById('show-comments');
+    init: function () {
+      this.fluidVids();
+      this.showComments();
+    },
 
-  if (showComments) {
-    showComments.addEventListener('click', function() {
-      showComments.parentNode.removeChild(showComments);
-      loadDisqus();
-    });
-  }
+    fluidVids: function () {
+      Fluidvids.init({
+        selector: 'iframe',
+        players: ['www.youtube.com', 'player.vimeo.com']
+      });
+    },
 
-  var disqus_shortname = 'agt-lucas',
-      disqus_url = 'http://agtlucas.com/blog{{ page.url }}';
+    showComments: function () {
+      var showComments = document.getElementById('show-comments');
 
-  function loadDisqus() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  }
+      if (showComments) {
+        showComments.addEventListener('click', function() {
+          showComments.parentNode.removeChild(showComments);
+          main.loadDisqus();
+        });
+      }
+    },
 
-})(window, document);
+    loadDisqus: function () {
+      var disqus_shortname = 'agt-lucas',
+          disqus_url = 'http://agtlucas.com/blog{{ page.url }}',
+          dsq = document.createElement('script');
+
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }
+  };
+
+  return main.init();
+
+})();
