@@ -5,7 +5,6 @@
  *
  * @author Lucas <lucas@agtlucas.com>
  * @version 0.0.0
- * @desc
  * @method init
  * @method fluidVids
  * @method showComments
