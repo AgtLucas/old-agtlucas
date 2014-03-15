@@ -1,4 +1,9 @@
-// TODO: Comment the code
+/**
+ * Main module
+ * The module pattern: http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript
+ *
+ * @author Lucas <lucas@agtlucas.com>
+ */
 var main = (function () {
 
   'use strict';
