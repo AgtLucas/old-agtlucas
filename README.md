@@ -8,3 +8,5 @@ Powered by:
 * [Compass](http://compass-style.org/)
 
 ### Migrating to Ghost
+
+Working in progress: https://github.com/AgtLucas/Lotus
