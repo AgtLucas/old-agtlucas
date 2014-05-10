@@ -72,4 +72,4 @@ var main = (function () {
   /* Return main.init(); */
   return main.init();
 
-})();
+}());
