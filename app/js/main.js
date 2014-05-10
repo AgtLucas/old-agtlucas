@@ -57,8 +57,8 @@ var main = (function () {
     loadDisqus: function () {
       // Disqus configuration
       var disqus_shortname = 'agt-lucas',
-          disqus_url = 'http://agtlucas.com/blog{{ page.url }}',
-          dsq = document.createElement('script');
+        disqus_url = 'http://agtlucas.com/blog{{ page.url }}',
+        dsq = document.createElement('script');
 
       // Insert the Disqus script at the bottom of the page
       dsq.type = 'text/javascript';
