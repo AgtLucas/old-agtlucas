@@ -43,7 +43,7 @@ var main = (function () {
       // If there's a show-comments id on the page
       if (showComments) {
         // Add a click event on it
-        showComments.addEventListener('click', function() {
+        showComments.addEventListener('click', function () {
           // Remove the show-comment div
           showComments.parentNode.removeChild(showComments);
           // Call loadDisqus to load comments
