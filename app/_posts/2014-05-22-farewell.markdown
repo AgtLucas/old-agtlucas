@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Farewell"
+date: 2014-05-17 08:00:00
+categories: blog
+description: A long time ago...
+---
+
