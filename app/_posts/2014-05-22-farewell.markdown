@@ -1,8 +1,31 @@
 ---
 layout: post
 title: "Farewell"
-date: 2014-05-22 22:00:00
+date: 2014-05-22 21:00:00
 categories: blog
 description: A long time ago...
 ---
 
+Today is the day that mark the end of a journey. I quit my job after 1 year and 10 months.
+
+### The beginning
+
+Everything started with a talk, a <a href="https://github.com/alessandrostein" target="_blank">friend</a> tell me about a position at <a href="http://www.milagro.ag/" target="_blank">Agência Milagro</a>, I was unemployed and I thought, why not?
+
+So, at night I sent an email to another <a href="https://github.com/grazigrossklags" target="_blank">friend, (who was doing internship there), asking few question about the position and then, I sent my résumé to her and she</a> indicated me to position.
+
+A day later, I was hired, as intern.
+
+### The half
+
+Working at Milagro was one of the best professional experience I ever had. I learned a lot, teached a lot, make new friends, met new people, visit other city... wow, it was a fantastic experience, for real.
+
+### The end
+
+Yeah, nothing last forever. Some people call me crazy for leaving my job, and you know, I just don't care! :)
+
+I do what I believe, and I believe in my dreams, so, for that reason I decided to quit my job and build my dreams. That's it.
+
+Lastly, I just wanna say thank to everybody who I worked with there, and in special to, Alessandro, Graziele, Fábio Ronchi and Michel.
+
+Cya!
