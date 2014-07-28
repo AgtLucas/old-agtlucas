@@ -15,7 +15,7 @@
     font-size: rem(14);
     a {
       text-transform: uppercase;
-      color: $agrey;
+      color: $tnob;
       &:hover {
         color: $ablue;
       }
@@ -172,7 +172,7 @@
 }
 
 .active {
-  color: $black !important;
+  color: $ablue !important;
 }
 
 .show-comments {
