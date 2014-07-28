@@ -8,7 +8,7 @@ $agrey: #999999;
 $bluegrey: #2A303B;
 $ablue: #08c;
 $grey: #555555;
-$tnob: #666;
+$tnob: #2b2b2b;
 $font-size: 16;
 
 // Susy
@@ -57,7 +57,6 @@ body {
   font-size: 16px;
   font-size: rem(16);
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
   background: $white;
   color: $tnob;
 
