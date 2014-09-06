@@ -10,7 +10,7 @@ Hello everybody!
 
 No more disc spins, no more disc noise, I finally put a SSD on my MacBook Pro! And the result, as I expected, is far more than excellent.
 
-The model that I've choose is a <a href="http://amzn.com/B00E3W15P0" target="_blank" target="_blank">Samsung 840 Evo 120GB</a>. This model use <a href="http://www.computerweekly.com/feature/MLC-vs-SLC-Which-flash-SSD-is-right-for-you" target="_blank">SLC</a> (Single Level Cell) and is really, really faster!
+The model that I've choose is a <a href="http://amzn.com/B00E3W15P0" target="_blank" target="_blank">Samsung 840 Evo 120GB</a>. This model use <a href="http://www.computerweekly.com/feature/MLC-vs-SLC-Which-flash-SSD-is-right-for-you" target="_blank">TLC</a> (Triple Level Cell) and is really, really faster!
 
 After I get everything up and running, I disabled some things, such Hard Drive Sudden Motion Sensor (SSD has no moving parts):
 
