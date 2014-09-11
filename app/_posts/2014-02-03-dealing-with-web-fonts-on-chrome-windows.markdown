@@ -13,7 +13,7 @@ You can fix that using a lot of workarounds!
 You can set `-webkit-text-stroke` as an alternative to [g]old `text-shadow`, or, you can do something like that:
 
 {% highlight css %}
-/* You @font-face */
+/* Your @font-face */
 /* foo bar */
 
 /* Little hack */
