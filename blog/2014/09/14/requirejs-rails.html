@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang=en><head><!--[if lt IE 10]><meta http-equiv="refresh" content="0; url=/sorry/"><![endif]--><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>How to use RequireJS with Rails - Lucas</title><meta name=viewport content="width=device-width"><meta name=description content="My year so far, a little late..."><!-- Prefetch DNS --><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//platform.twitter.com><link rel=dns-prefetch href=//p.twitter.com><link rel=dns-prefetch href=//cdn.api.twitter.com><link rel=dns-prefetch href=//www.google-analytics.com><link rel=dns-prefetch href=//themes.googleusercontent.com><link rel=dns-prefetch href=//a.disquscdn.com><link rel=stylesheet href=/css/b13a.main.css><script type=text/javascript>WebFontConfig = {
+      google: { families: [ 'Open+Sans:400,700,300:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();</script><link rel=canonical href=http://agtlucas.com/blog/2014/09/14/requirejs-rails.html><meta name=twitter:card content=summary><meta name=twitter:site content=@_agtlucas><meta name=twitter:creator content=@_agtlucas><meta property=og:url content=http://agtlucas.com/blog/2014/09/14/requirejs-rails.html><meta property=og:type content=website><meta property=og:title content="How to use RequireJS with Rails"><meta property=og:description content="My year so far, a little late..."><link rel="shortcut icon" href=/img/favicon.ico><link rel=author href=https://plus.google.com/+LucasChurchill></head><body class="blog-post peaceful"><header class=main-header role=banner><nav><ul class=header-links><li><h3 class=logo><a href="/" data-pjax=.main>Lucas</a></h3></li><li><a href=/about data-pjax=.main>About</a></li><li><a href=/blog data-pjax=.main>Blog</a></li><li><a href=/contact data-pjax=.main>Contact</a></li></ul></nav></header><div class=main role=main><article class="content post-content" role=article><h2 class=post-title>How to use RequireJS with Rails</h2><small class=meta>14 Sep 2014</small><div class=post><p>Hello there,</p><p>Well, it's september and I didn't post nothing since July. :/ Let's do this!</p><h2>RequireJS + Rails</h2><p>So, a few days ago I was playing with a Rails project and I started to think how to implement <a href="http://requirejs.org/" target=_blank>RequireJS</a> with Rails. For those who don't know what the heck it's RequireJS, here's a little overview from his website:</p><blockquote><p>RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code.</p></blockquote><h2>The requirejs-rails Gem</h2><p>Fortunately, there's a Gem that makes ease to implement RequireJS in a Rails project, check out <a href=https://github.com/jwhitley/requirejs-rails target=_blank>here</a>.</p><h2>Using requirejs-rails Gem</h2><p>You'll need to install the Gem, so add it in your Gemfile:</p><div class=highlight><pre><code class=ruby><span class=n>gem</span> <span class=s1>&#39;requirejs-rails&#39;</span>
+</code></pre></div><p>Run <code>bundle update</code> and <code>bundle install</code> and we'll be ready to go!</p><p>Next step, create a <code>requirejs.yml</code> file in the <code>config</code> folder. This file will be our configuration file, where we can put our paths and shim. Take a look in the example bellow.</p><div class=highlight><pre><code class=yaml><span class=l-Scalar-Plain>paths</span><span class=p-Indicator>:</span>
+  <span class=c1># File paths and names</span>
+  <span class=l-Scalar-Plain>delta</span><span class=p-Indicator>:</span> <span class=s>&#39;delta&#39;</span>
+  <span class=l-Scalar-Plain>application</span><span class=p-Indicator>:</span> <span class=s>&#39;application&#39;</span>
+
+  <span class=l-Scalar-Plain>jquery</span><span class=p-Indicator>:</span> <span class=s>&#39;jquery&#39;</span>
+  <span class=l-Scalar-Plain>jquery_ujs</span><span class=p-Indicator>:</span> <span class=s>&#39;jquery_ujs&#39;</span>
+  <span class=l-Scalar-Plain>turbolinks</span><span class=p-Indicator>:</span> <span class=s>&#39;turbolinks&#39;</span>
+
+<span class=l-Scalar-Plain>shim</span><span class=p-Indicator>:</span>
+  <span class=c1># http://requirejs.org/docs/api.html#config-shim</span>
+  <span class=l-Scalar-Plain>jquery</span><span class=p-Indicator>:</span>
+    <span class=l-Scalar-Plain>exports</span><span class=p-Indicator>:</span> <span class=s>&#39;jquery&#39;</span>
+  <span class=l-Scalar-Plain>jquery_ujs</span><span class=p-Indicator>:</span>
+    <span class=l-Scalar-Plain>deps</span><span class=p-Indicator>:</span> <span class=p-Indicator>[</span><span class=s>&#39;jquery&#39;</span><span class=p-Indicator>]</span>
+
+<span class=c1># Default app name</span>
+<span class=l-Scalar-Plain>modules</span><span class=p-Indicator>:</span>
+  <span class=p-Indicator>-</span> <span class=l-Scalar-Plain>name</span><span class=p-Indicator>:</span> <span class=s>&#39;application&#39;</span>
+</code></pre></div><p>Now it's time to remove all Sprockets directives, like <code>//= require jquery</code> from your js files.</p><p>You can write your scripts using the <a href=https://github.com/amdjs/amdjs-api/blob/master/AMD.md target=_blank>Asynchronous Module Definition (AMD)</a> like so:</p><div class=highlight><pre><code class=javascript><span class=c1>// delta.js file</span>
+<span class=nx>define</span><span class=p>([</span><span class=s1>&#39;jquery&#39;</span><span class=p>,</span> <span class=s1>&#39;jquery_ujs&#39;</span><span class=p>,</span> <span class=s1>&#39;turbolinks&#39;</span><span class=p>],</span> <span class=kd>function</span> <span class=p>(</span><span class=nx>$</span><span class=p>)</span> <span class=p>{</span>
+
+  <span class=s1>&#39;use strict&#39;</span><span class=p>;</span>
+
+  <span class=kd>var</span> <span class=nx>delta</span> <span class=o>=</span> <span class=p>{};</span>
+
+  <span class=nx>delta</span><span class=p>.</span><span class=nx>init</span> <span class=o>=</span> <span class=kd>function</span> <span class=p>()</span> <span class=p>{</span>
+    <span class=k>this</span><span class=p>.</span><span class=nx>addLoader</span><span class=p>(</span><span class=s1>&#39;p&#39;</span><span class=p>);</span>
+    <span class=k>this</span><span class=p>.</span><span class=nx>removeLoader</span><span class=p>(</span><span class=s1>&#39;a&#39;</span><span class=p>);</span>
+  <span class=p>};</span>
+
+  <span class=nx>delta</span><span class=p>.</span><span class=nx>addLoader</span> <span class=o>=</span> <span class=kd>function</span> <span class=p>(</span><span class=nx>element</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>$</span><span class=p>(</span><span class=nx>element</span><span class=p>));</span>
+  <span class=p>};</span>
+
+  <span class=nx>delta</span><span class=p>.</span><span class=nx>removeLoader</span> <span class=o>=</span> <span class=kd>function</span> <span class=p>(</span><span class=nx>element</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>$</span><span class=p>(</span><span class=nx>element</span><span class=p>));</span>
+  <span class=p>};</span>
+
+  <span class=k>return</span> <span class=nx>delta</span><span class=p>.</span><span class=nx>init</span><span class=p>();</span>
+
+<span class=p>});</span>
+</code></pre></div><p>Calling <code>delta.js</code> file in your <code>application.js</code> file:</p><div class=highlight><pre><code class=javascript><span class=c1>// application.js file</span>
+<span class=nx>require</span><span class=p>([</span><span class=s1>&#39;delta&#39;</span><span class=p>],</span> <span class=kd>function</span> <span class=p>()</span> <span class=p>{</span>
+
+<span class=p>});</span>
+</code></pre></div><p>Doing that, just run <code>rake assets:precompile</code> and we're done!</p><h2>Odd thing</h2><p>If you're using <a href="https://rails-assets.org/" target=_blank>Rails Assets</a>, there's a bug with the last version of requirejs-rails Gem, I found this but don't know how to fix yet, the only solution for me was to downgrade the Gem to <code>0.9.3</code> version. <a href=https://github.com/jwhitley/requirejs-rails/issues/188 target=_blank>Here's the issue</a>.</p><h2>Wrapping up</h2><p>RequireJS is a great solution to write modularized and decoupled JavaScript, but sometimes it can be unnecessary. I recommend you to take a look and test it, not only RequireJS, but <a href="http://browserify.org/" target=_blank>Browserify</a> also, after all, we are not forced to use these solution.</p><p>Cya!</p></div><section class=prev-next-posts><ul><li class=prev-post><a href=/blog/2014/07/28/year-review-so-far-2-4.html class=pn-link data-pjax=.main><h4>Previous Post</h4><span>2/4 Year review</span></a></li></ul></section><section class=comments><h4 class=show-comments id=show-comments>Show Comments</h4><div class=comments-content><div class=post-comments id=disqus_thread></div></div></section></article></div><footer class=main-footer><small>&copy; 2014 - <a href=mailto:lucas@agtlucas.com>Lucas</a> - Powered by <a href="http://jekyllrb.com/" target=_blank>Jekyll</a> + <a href="http://pages.github.com/" target=_blank>GitHub Pages</a></small></footer><script src=/js/8a77.scripts.js></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44982428-1', 'agtlucas.com');
+  ga('send', 'pageview');</script></body></html>
