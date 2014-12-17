@@ -28,8 +28,8 @@ var main = (function () {
      *  @name fluidVids */
     fluidVids: function () {
       // FluidVids plugin
-      Fluidvids.init({
-        selector: 'iframe',
+      fluidvids.init({
+        selector: ['iframe', 'object'],
         players: ['www.youtube.com', 'player.vimeo.com']
       });
     },
